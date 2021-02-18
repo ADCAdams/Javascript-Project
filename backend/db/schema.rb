@@ -10,25 +10,26 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_02_18_174911) do
+ActiveRecord::Schema.define(version: 2021_02_18_182824) do
 
   create_table "heros", force: :cascade do |t|
     t.string "name"
-    t.integer "winrate"
+    t.float "winrate"
     t.integer "teamID"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "role"
   end
 
   create_table "matches", force: :cascade do |t|
     t.string "winner"
-    t.integer "winnerProbability"
+    t.float "winnerProbability"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "teams", force: :cascade do |t|
-    t.integer "teamWinrate"
+    t.float "teamWinrate"
     t.boolean "radiantSide"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
