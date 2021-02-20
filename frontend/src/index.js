@@ -5,7 +5,7 @@ const teamDire = []
 
 
 document.addEventListener('DOMContentLoaded', function(){
-    alert("index.js alert")
+
     addMatchButtonListener()
 })
 
@@ -49,7 +49,7 @@ function makeTeams() {
 function renderHero(hero){
     let newli = document.createElement('li')
     newli.className="heroListItem"
-    newli.innerHTML = `${hero.name} --- ${hero.winrate}`
+    newli.innerHTML = `${hero.name} --- ${parseFloat(hero.winrate*100).toFixed(2)+"%"}`
     return newli
 }
 
