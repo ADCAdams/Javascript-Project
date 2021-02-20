@@ -19,9 +19,10 @@ H2{
     justify-content: center;
   }
   
-  .centerButton {
-    
-  }
+.heroWinrateSpan {
+    float: right;
+}
+
 .column{
     float: left;
     width: 50%;
@@ -29,7 +30,7 @@ H2{
 }
 
 .heroList{
-    font-size: 30px;
+    font-size: 20px;
 
 }
 
