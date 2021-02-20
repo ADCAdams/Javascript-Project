@@ -6,13 +6,10 @@ class ApiService {
         this.dotaWebsiteApiUrl = "https://api.opendota.com/api/heroStats"
     }
 
-    BASE_URL = "http://localhost:3000"
-    HEROS_URL = `${BASE_URL}/heros`
-
     //const apiService = new ApiService()
 
     getHeros() {
-        return fetch(HEROS_URL).then(res => res.json());
+        return fetch(this.herosUrl).then(res => res.json().data); //returns array inside json
     }
 
     getNewApiHeros(){

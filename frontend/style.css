@@ -3,9 +3,29 @@ body {
     padding: 10;
   }
 
+H2{
+    text-align: center;
+}
+
+.pageWrapper {
+    flex-direction: column;
+    display: flex;
+}
+
+.containerButton {
+    margin-top: 200px;
+    display: flex;
+    border: 3px solid green;
+    justify-content: center;
+  }
+  
+  .centerButton {
+    
+  }
 .column{
     float: left;
     width: 50%;
+    background-color:lightcoral
 }
 
 .heroList{

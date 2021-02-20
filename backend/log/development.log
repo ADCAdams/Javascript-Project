@@ -1178,3 +1178,159 @@ Processing by HerosController#index as HTML
 Completed 200 OK in 71ms (Views: 47.9ms | ActiveRecord: 2.2ms | Allocations: 28453)
 
 
+Started GET "/heros" for ::1 at 2021-02-20 13:50:34 -0500
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HerosController#index as */*
+  [1m[36mHero Load (1.0ms)[0m  [1m[34mSELECT "heros".* FROM "heros"[0m
+  ↳ app/controllers/heros_controller.rb:10:in `index'
+Completed 200 OK in 44ms (Views: 35.6ms | ActiveRecord: 2.3ms | Allocations: 28458)
+
+
+Started GET "/heros" for ::1 at 2021-02-20 13:50:50 -0500
+Processing by HerosController#index as HTML
+  [1m[36mHero Load (1.0ms)[0m  [1m[34mSELECT "heros".* FROM "heros"[0m
+  ↳ app/controllers/heros_controller.rb:10:in `index'
+Completed 200 OK in 32ms (Views: 30.2ms | ActiveRecord: 1.0ms | Allocations: 21380)
+
+
+Started GET "/heros" for ::1 at 2021-02-20 13:52:01 -0500
+Processing by HerosController#index as HTML
+  [1m[36mHero Load (0.5ms)[0m  [1m[34mSELECT "heros".* FROM "heros"[0m
+  ↳ app/controllers/heros_controller.rb:10:in `index'
+Completed 200 OK in 19ms (Views: 17.8ms | ActiveRecord: 0.5ms | Allocations: 21379)
+
+
+Started GET "/heros" for ::1 at 2021-02-20 13:53:46 -0500
+Processing by HerosController#index as HTML
+  [1m[36mHero Load (0.6ms)[0m  [1m[34mSELECT "heros".* FROM "heros"[0m
+  ↳ app/controllers/heros_controller.rb:10:in `index'
+Completed 200 OK in 24ms (Views: 23.2ms | ActiveRecord: 0.6ms | Allocations: 21379)
+
+
+Started GET "/heros" for ::1 at 2021-02-20 13:59:23 -0500
+Processing by HerosController#index as */*
+  [1m[36mHero Load (0.5ms)[0m  [1m[34mSELECT "heros".* FROM "heros"[0m
+  ↳ app/controllers/heros_controller.rb:10:in `index'
+Completed 200 OK in 39ms (Views: 38.4ms | ActiveRecord: 0.5ms | Allocations: 21367)
+
+
+Started GET "/heros" for ::1 at 2021-02-20 14:02:00 -0500
+Processing by HerosController#index as */*
+  [1m[36mHero Load (0.5ms)[0m  [1m[34mSELECT "heros".* FROM "heros"[0m
+  ↳ app/controllers/heros_controller.rb:10:in `index'
+Completed 200 OK in 18ms (Views: 16.9ms | ActiveRecord: 0.5ms | Allocations: 21364)
+
+
+Started GET "/heros" for ::1 at 2021-02-20 14:02:04 -0500
+Processing by HerosController#index as */*
+  [1m[36mHero Load (0.4ms)[0m  [1m[34mSELECT "heros".* FROM "heros"[0m
+  ↳ app/controllers/heros_controller.rb:10:in `index'
+Completed 200 OK in 20ms (Views: 18.9ms | ActiveRecord: 0.4ms | Allocations: 21364)
+
+
+Started GET "/heros" for ::1 at 2021-02-20 14:02:25 -0500
+Processing by HerosController#index as */*
+  [1m[36mHero Load (0.5ms)[0m  [1m[34mSELECT "heros".* FROM "heros"[0m
+  ↳ app/controllers/heros_controller.rb:10:in `index'
+Completed 200 OK in 19ms (Views: 18.2ms | ActiveRecord: 0.5ms | Allocations: 21381)
+
+
+Started GET "/heros" for ::1 at 2021-02-20 14:02:45 -0500
+Processing by HerosController#index as */*
+  [1m[36mHero Load (0.5ms)[0m  [1m[34mSELECT "heros".* FROM "heros"[0m
+  ↳ app/controllers/heros_controller.rb:10:in `index'
+Completed 200 OK in 27ms (Views: 25.9ms | ActiveRecord: 0.5ms | Allocations: 21367)
+
+
+Started GET "/heros" for ::1 at 2021-02-20 14:03:11 -0500
+Processing by HerosController#index as HTML
+  [1m[36mHero Load (0.4ms)[0m  [1m[34mSELECT "heros".* FROM "heros"[0m
+  ↳ app/controllers/heros_controller.rb:10:in `index'
+Completed 200 OK in 13ms (Views: 12.6ms | ActiveRecord: 0.4ms | Allocations: 21362)
+
+
+Started GET "/heros" for ::1 at 2021-02-20 14:14:21 -0500
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HerosController#index as */*
+  [1m[36mHero Load (0.6ms)[0m  [1m[34mSELECT "heros".* FROM "heros"[0m
+  ↳ app/controllers/heros_controller.rb:10:in `index'
+Completed 200 OK in 30ms (Views: 23.6ms | ActiveRecord: 1.4ms | Allocations: 28457)
+
+
+Started GET "/heros" for ::1 at 2021-02-20 14:22:43 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by HerosController#index as */*
+  [1m[36mHero Load (0.6ms)[0m  [1m[34mSELECT "heros".* FROM "heros"[0m
+  ↳ app/controllers/heros_controller.rb:12:in `index'
+Completed 200 OK in 34ms (Views: 29.6ms | ActiveRecord: 0.6ms | Allocations: 27407)
+
+
+Started GET "/heros" for ::1 at 2021-02-20 14:24:29 -0500
+Processing by HerosController#index as */*
+  [1m[36mHero Load (0.6ms)[0m  [1m[34mSELECT "heros".* FROM "heros"[0m
+  ↳ app/controllers/heros_controller.rb:12:in `index'
+Completed 200 OK in 37ms (Views: 35.5ms | ActiveRecord: 0.6ms | Allocations: 21384)
+
+
+Started GET "/heros" for ::1 at 2021-02-20 14:24:49 -0500
+Processing by HerosController#index as */*
+  [1m[36mHero Load (0.4ms)[0m  [1m[34mSELECT "heros".* FROM "heros"[0m
+  ↳ app/controllers/heros_controller.rb:12:in `index'
+Completed 200 OK in 18ms (Views: 17.1ms | ActiveRecord: 0.4ms | Allocations: 21381)
+
+
+Started GET "/heros" for ::1 at 2021-02-20 14:25:16 -0500
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HerosController#index as */*
+  [1m[36mHero Load (1.0ms)[0m  [1m[34mSELECT "heros".* FROM "heros"[0m
+  ↳ app/controllers/heros_controller.rb:12:in `index'
+Completed 200 OK in 35ms (Views: 28.1ms | ActiveRecord: 2.2ms | Allocations: 28458)
+
+
+Started GET "/heros" for ::1 at 2021-02-20 14:25:46 -0500
+Processing by HerosController#index as */*
+  [1m[36mHero Load (0.5ms)[0m  [1m[34mSELECT "heros".* FROM "heros"[0m
+  ↳ app/controllers/heros_controller.rb:12:in `index'
+Completed 200 OK in 20ms (Views: 18.9ms | ActiveRecord: 0.5ms | Allocations: 21382)
+
+
+Started GET "/heros" for ::1 at 2021-02-20 14:32:35 -0500
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HerosController#index as */*
+  [1m[36mHero Load (0.6ms)[0m  [1m[34mSELECT "heros".* FROM "heros"[0m
+  ↳ app/controllers/heros_controller.rb:12:in `index'
+Completed 200 OK in 28ms (Views: 22.8ms | ActiveRecord: 1.5ms | Allocations: 28458)
+
+
+Started GET "/heros" for ::1 at 2021-02-20 14:33:38 -0500
+Processing by HerosController#index as */*
+  [1m[36mHero Load (0.5ms)[0m  [1m[34mSELECT "heros".* FROM "heros"[0m
+  ↳ app/controllers/heros_controller.rb:12:in `index'
+Completed 200 OK in 16ms (Views: 15.1ms | ActiveRecord: 0.5ms | Allocations: 21382)
+
+
+Started GET "/heros" for ::1 at 2021-02-20 14:34:28 -0500
+Processing by HerosController#index as */*
+  [1m[36mHero Load (0.6ms)[0m  [1m[34mSELECT "heros".* FROM "heros"[0m
+  ↳ app/controllers/heros_controller.rb:12:in `index'
+Completed 200 OK in 17ms (Views: 16.6ms | ActiveRecord: 0.6ms | Allocations: 21382)
+
+
+Started GET "/heros" for ::1 at 2021-02-20 14:34:48 -0500
+Processing by HerosController#index as */*
+  [1m[36mHero Load (0.5ms)[0m  [1m[34mSELECT "heros".* FROM "heros"[0m
+  ↳ app/controllers/heros_controller.rb:12:in `index'
+Completed 200 OK in 16ms (Views: 15.8ms | ActiveRecord: 0.5ms | Allocations: 21382)
+
+
+Started GET "/heros" for ::1 at 2021-02-20 14:35:13 -0500
+Processing by HerosController#index as */*
+  [1m[36mHero Load (0.5ms)[0m  [1m[34mSELECT "heros".* FROM "heros"[0m
+  ↳ app/controllers/heros_controller.rb:12:in `index'
+Completed 200 OK in 26ms (Views: 25.6ms | ActiveRecord: 0.5ms | Allocations: 21385)
+
+
