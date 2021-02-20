@@ -15,7 +15,7 @@ class ApiService {
         return fetch(HEROS_URL).then(res => res.json());
     }
 
-    dotadata(){
+    getNewApiHeros(){
         return fetch("https://api.opendota.com/api/heroStats").then(res => res.json());
     }
 
