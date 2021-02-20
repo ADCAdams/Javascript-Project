@@ -9,7 +9,7 @@ class ApiService {
     //const apiService = new ApiService()
 
     getHeros() {
-        return fetch(this.herosUrl).then(res => res.json().data); //returns array inside json
+        return fetch(this.herosUrl).then(res => res.json()); //returns array inside json
     }
 
     getNewApiHeros(){

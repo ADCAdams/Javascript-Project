@@ -20,8 +20,12 @@ function makeTeams() {
     let matchHeros = []
     clearHeroList("radiantListID")
     clearHeroList("direListID")
-    apiService.getHeros().then(heros => { 
-        console.log(typeof(heros));
+
+    let heros = []
+    apiService.getHeros().then(herosResp => { 
+        heros = herosResp.data
+
+
         while (matchHeros.length < 10){
             const rawHero = heros[Math.floor(Math.random() * heros.length)]
             const newHero = new Hero(rawHero)
@@ -29,8 +33,8 @@ function makeTeams() {
                 matchHeros.push(newHero)
             }
         }
-        teamRadiant = matchHeros.slice(5);
-        teamDire = matchHeros.slice(5,10);
+        let teamRadiant = matchHeros.slice(0,5);
+        let teamDire = matchHeros.slice(5,10);
         
 
         teamRadiant.forEach(hero => {
@@ -43,23 +47,24 @@ function makeTeams() {
 }
 
 function renderHero(hero){
-    return `<li class = "heroListItem">
-                ${hero.name} --- ${hero.winrate}
-        </li>`;
+    let newli = document.createElement('li')
+    newli.className="heroListItem"
+    newli.innerHTML = `${hero.name} --- ${hero.winrate}`
+    return newli
 }
 
 function appendRadiantHero(hero) {
-    radiantUL = document.getElementById("radiantListID")
+    let radiantUL = document.getElementById("radiantListID")
 
-    liHero = renderHero(hero)
-    radiantUL.append(ilHero)
+    let liHero = renderHero(hero)
+    radiantUL.append(liHero)
 
 }
 function appendDireHero(hero) {
-    direUL = document.getElementById("direListID")
+    let direUL = document.getElementById("direListID")
 
-    liHero = renderHero(hero)
-    direUL.append(ilHero)
+    let liHero = renderHero(hero)
+    direUL.append(liHero)
 
 }
 
