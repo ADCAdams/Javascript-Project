@@ -1,0 +1,19 @@
+body {
+    margin: 10;
+    padding: 10;
+  }
+
+.column{
+    float: left;
+    width: 50%;
+}
+
+.heroList{
+    font-size: 30px;
+
+}
+
+.heroListItem{
+    background-color: lightblue
+}
+
