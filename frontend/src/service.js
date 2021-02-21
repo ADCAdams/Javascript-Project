@@ -16,4 +16,22 @@ class ApiService {
         return fetch("https://api.opendota.com/api/heroStats").then(res => res.json());
     }
 
+    postMatch(e){
+        return fetch(`${this.baseUrl}/matches`, {
+                method: "POST",
+                headers:{
+                    "Content-Type": "application/json",
+                    "Accept": "application/json"
+                },
+                body: JSON.stringify(
+                    {
+                        match: {
+                            winner: "winner1"
+                        }
+                    }
+                )
+            })
+            .then(resp => resp.json())
+    }
+
 }

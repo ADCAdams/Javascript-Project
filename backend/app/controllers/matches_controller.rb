@@ -14,4 +14,10 @@ class MatchesController < ApplicationController
         render json: match
     end
     
+    def index 
+        matches = Match.all 
+        render json: matchSerializer.new(matches)
+        #render json: matchs
+
+    end
 end
