@@ -49,12 +49,12 @@ function makeTeams() {
 function renderHero(hero){
     let newli = document.createElement('li')
     newli.className="heroListItem"
-    newli.innerHTML = `<span class="heroNameSpan">
+    newli.innerHTML = `<span class="heroLiSpan"> <span class="heroNameSpan">
     ${hero.name}
     </span>
     <span class="heroWinrateSpan">
     ${parseFloat(hero.winrate*100).toFixed(2)+"%"}
-    </span>`
+    </span> </span>`
     return newli
 }
 

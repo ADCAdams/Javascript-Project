@@ -11,6 +11,13 @@ H2{
     flex-direction: column;
     display: flex;
 }
+/* .heroListItem{
+    display: flex;
+} */
+.heroLiSpan {
+    display: flex;
+    justify-content: space-around;
+}
 
 .containerButton {
     margin-top: 200px;
@@ -31,6 +38,7 @@ H2{
 
 .heroList{
     font-size: 20px;
+    list-style-type: none;
 
 }
 
