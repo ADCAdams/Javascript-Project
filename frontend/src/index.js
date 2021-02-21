@@ -23,6 +23,8 @@ function makeTeams() {
     clearHeroList("direListID");
 
     let heros = []
+    let teamRadiant = []
+    let teamDire = []
     apiService.getHeros().then(herosResp => { 
         heros = herosResp.data //makes array of heros
 
@@ -34,11 +36,8 @@ function makeTeams() {
                 matchHeros.push(newHero) //adds unique heros to the array
             }
         }
-        let teamRadiant = matchHeros.slice(0,5); //splits on to two teams
-        let teamDire = matchHeros.slice(5,10);
-
-        let newMatch = new Match(teamRadiant,teamDire); //MATCH IS NOT DEFINED HERE
-        apiService.postMatch(newMatch); //MATCH IS NOT DEFINED HERE
+        teamRadiant = matchHeros.slice(0,5); //splits on to two teams
+        teamDire = matchHeros.slice(5,10);
         
 
         teamRadiant.forEach(hero => {
@@ -48,6 +47,11 @@ function makeTeams() {
             appendDireHero(hero);
          })
     })
+
+    let newMatch = new Match(teamRadiant,teamDire); //MATCH IS NOT DEFINED HERE
+    apiService.postMatch(newMatch); //MATCH IS NOT DEFINED HERE
+
+
 }
 
 function renderHero(hero){

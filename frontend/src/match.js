@@ -11,9 +11,9 @@ class Match {
 
      calculateTeamWinAvg(teamHeroArray){
         const teamWinAvg = 0
-        teamHeroArray.forEach(hero){
+        teamHeroArray.forEach(function (hero){
             teamWinAvg += hero.winrate
-        }
+        })
         teamWinAvg = teamWinAvg/5
         return teamWinAvg
     }
