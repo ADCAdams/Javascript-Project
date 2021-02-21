@@ -14,7 +14,7 @@ class Match {
         this.matchHeros = []
         Match.clearHeroList("radiantListID");
         Match.clearHeroList("direListID");
-        Match.clearWinners;
+        Match.clearWinners();
     
         
  
@@ -68,12 +68,12 @@ class Match {
         if (radiantWinAvg > direWinAvg){
             this.winner = "Radiant"
             const delta = radiantWinAvg - direWinAvg
-            this.winnerProbability = (delta/.20)  //or 'liklihood'
+            this.winnerProbability = (delta/.07)  //or 'liklihood'
             
         } else if (direWinAvg > radiantWinAvg){
             this.winner = "Dire"
             const delta =  direWinAvg - radiantWinAvg
-            this.winnerProbability = (delta/.20)  //or 'liklihood'
+            this.winnerProbability = (delta/.07)  //or 'liklihood'
         } else {
             this.winner = "Tie"
         }
@@ -134,7 +134,7 @@ class Match {
     }
 
     static clearWinners(){
-        let containDiv = document.getElementById("containerWinner")
+        let containDiv = document.getElementById("containerWinner");
         while(containDiv.firstChild) containDiv.removeChild(containDiv.firstChild);
     }
 
