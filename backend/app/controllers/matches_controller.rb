@@ -1,12 +1,7 @@
 class MatchesController < ApplicationController
     def create
-        if Match.find_by(:id => match_params[:id])
-            match = Match.find_by(:name => match_params[:name])
-            redirect_to "/matches/#{Match.id}"
-        else
-            match = Match.create(Match_params)
-            render json: match
-        end
+        match = Match.create(match_params)
+        render json: match
     end
 
     def show
@@ -19,5 +14,12 @@ class MatchesController < ApplicationController
         render json: matchSerializer.new(matches)
 
 
+    end
+
+
+    private
+
+    def match_params
+        params.require(:match).permit(:winner, :winner_probability)
     end
 end
