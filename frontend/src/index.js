@@ -16,25 +16,29 @@ function addMatchButtonListener() {
     })
 }
 
+
 function makeTeams() {
     let matchHeros = []
-    clearHeroList("radiantListID")
-    clearHeroList("direListID")
+    clearHeroList("radiantListID");
+    clearHeroList("direListID");
 
     let heros = []
     apiService.getHeros().then(herosResp => { 
-        heros = herosResp.data
+        heros = herosResp.data //makes array of heros
 
 
-        while (matchHeros.length < 10){
+        while (matchHeros.length < 10){ //gets 10- heros
             const rawHero = heros[Math.floor(Math.random() * heros.length)]
             const newHero = new Hero(rawHero)
             if (!matchHeros.includes(newHero)){
-                matchHeros.push(newHero)
+                matchHeros.push(newHero) //adds unique heros to the array
             }
         }
-        let teamRadiant = matchHeros.slice(0,5);
+        let teamRadiant = matchHeros.slice(0,5); //splits on to two teams
         let teamDire = matchHeros.slice(5,10);
+
+        let newMatch = new Match(teamRadiant,teamDire); //MATCH IS NOT DEFINED HERE
+        apiService.postMatch(newMatch); //MATCH IS NOT DEFINED HERE
         
 
         teamRadiant.forEach(hero => {

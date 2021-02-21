@@ -16,7 +16,7 @@ class ApiService {
         return fetch("https://api.opendota.com/api/heroStats").then(res => res.json());
     }
 
-    postMatch(e){
+    postMatch(matchArg){
         return fetch(`${this.baseUrl}/matches`, {
                 method: "POST",
                 headers:{
@@ -26,7 +26,8 @@ class ApiService {
                 body: JSON.stringify(
                     {
                         match: {
-                            winner: "winner1"
+                            winner: matchArg.winner,
+                            winnerProbability: matchArg.winnerProbability
                         }
                     }
                 )
