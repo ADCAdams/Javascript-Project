@@ -90,8 +90,9 @@ class Match {
         winContainer.append(winProbSpan);
     }
 
-     static renderHero(hero){
+     static renderHero(hero, teamFlag){
         let newli = document.createElement('li')
+        newli.style =  teamFlag == "r" ? "border: 3px solid green;" : "border: 3px solid red;"
         newli.className="heroListItem"
         newli.innerHTML = 
         `<div class="heroLiSpan">
@@ -111,14 +112,14 @@ class Match {
      static appendRadiantHero(hero) {
         let radiantUL = document.getElementById("radiantListID")
     
-        let liHero = Match.renderHero(hero)
+        let liHero = Match.renderHero(hero, "r")
         radiantUL.append(liHero)
     
     }
      static appendDireHero(hero) {
         let direUL = document.getElementById("direListID")
     
-        let liHero = Match.renderHero(hero)
+        let liHero = Match.renderHero(hero, "d")
         direUL.append(liHero)
     
     }
