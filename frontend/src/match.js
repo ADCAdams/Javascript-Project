@@ -95,7 +95,7 @@ class Match {
         let newli = document.createElement('li')
         newli.className="heroListItem"
         newli.innerHTML = 
-        `<span class="heroLiSpan">
+        `<div class="heroLiSpan">
             <span class="heroImage">
                 <img src="http://cdn.dota2.com/apps/dota2/images/heroes/${hero.name.toLowerCase()}_full.png" style="width:80px;height:45px;"></img>
             </span>
@@ -105,7 +105,7 @@ class Match {
             <span class="heroWinrateSpan">
                 ${parseFloat(hero.winrate*100).toFixed(2)+"%"}
             </span>
-        </span>`
+        </div>`
         return newli
     }
     

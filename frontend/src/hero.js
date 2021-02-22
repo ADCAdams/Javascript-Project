@@ -19,18 +19,4 @@ class Hero {
         direUL.append(liHero)
     
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }       //ends class
