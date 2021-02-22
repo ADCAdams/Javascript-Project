@@ -3,7 +3,8 @@ class CreateHeros < ActiveRecord::Migration[6.0]
     create_table :heros do |t|
       t.string :name
       t.float :winrate
-      t.integer :teamID
+      t.integer :team_id
+      t.string :role
 
       t.timestamps
     end

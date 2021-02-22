@@ -2,11 +2,11 @@ class Hero {
 
     constructor(hero){
         try { 
-            if (hero.base_health > 0){
+            if (hero.base_health > 0){          //checks if hero is from liveAPI, or my backend
             this.name = hero.localized_name;
             this.winrate = 0;
             this.role = "";
-        } else {
+        } else {                                //else, hero coming from my backend db
             this.name = hero.attributes.name;
             this.winrate = hero.attributes.winrate
             this.role = hero.attributes.role

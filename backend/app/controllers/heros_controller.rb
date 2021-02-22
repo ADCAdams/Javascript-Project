@@ -16,16 +16,16 @@ class HerosController < ApplicationController
 
     def update
         #binding.pry
-        hero = Hero.find_by(name: params[:hero][:name])
-        # hero.update(hero_params)    hero_params is the style I used in my #update in  myRails project in mod3
-        hero.update(winrate: params[:hero][:winrate]);
+        @hero = Hero.find_by(name: params[:hero][:name])
+        @hero.update(hero_params)    #hero_params is the style I used in my #update in  myRails project in mod3
+        #hero.update(winrate: params[:hero][:winrate]);
         render json: "ok"
     end
 
     private
 
     def hero_params
-        params.require(:hero).permit(:name, :winrate)
+        params.require(:hero).permit(:name, :winrate, :match_id, :teamID)
     end
 
 

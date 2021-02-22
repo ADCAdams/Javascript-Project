@@ -46,7 +46,9 @@ class ApiService {
                 body: JSON.stringify({
                     hero: {
                         name: heroObj.name,
-                        winrate: heroObj.winrate
+                        winrate: heroObj.winrate,
+                        match_id: "1",
+                        teamID: 1
                     }
 
                     })
