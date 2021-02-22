@@ -22,7 +22,7 @@ function addSaveMatchButtonListener() {
     button.addEventListener('click', function(){
         if (currentMatch){
             apiService.postMatch(currentMatch)
-            Hero.updateHeros();
+            //Hero.updateHeros();
         }
     })
 }

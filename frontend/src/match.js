@@ -61,12 +61,12 @@ class Match {
         if (radiantWinAvg > direWinAvg){
             this.winner = "Radiant"
             const delta = radiantWinAvg - direWinAvg
-            this.winnerProbability = (delta/.07)  //or 'liklihood'
+            this.winnerProbability = parseFloat((delta/.04).toFixed(4))  //or 'liklihood'
             
         } else if (direWinAvg > radiantWinAvg){
             this.winner = "Dire"
             const delta =  direWinAvg - radiantWinAvg
-            this.winnerProbability = (delta/.07)  //or 'liklihood'
+            this.winnerProbability = parseFloat((delta/.04).toFixed(4))  //or 'liklihood'
         } else {
             this.winner = "Tie"
         }

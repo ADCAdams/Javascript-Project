@@ -20,6 +20,6 @@ class MatchesController < ApplicationController
     private
 
     def match_params
-        params.require(:match).permit(:winner, :winner_probability)
+        params.require(:match).permit(:winner, :winnerProbability)
     end
 end
