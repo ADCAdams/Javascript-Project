@@ -38,4 +38,6 @@ class Hero {
     }
 
 
+    
+
 }       //ends class
