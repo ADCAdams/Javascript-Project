@@ -1,2 +1,4 @@
-
 backend/tmp/**
+backend/log/**
+backend/log/*
+backend/tmp/*

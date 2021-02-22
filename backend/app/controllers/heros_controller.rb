@@ -17,7 +17,8 @@ class HerosController < ApplicationController
     def update
         #binding.pry
         hero = Hero.find_by(name: params[:hero][:name])
-        hero.update(hero_params)
+        # hero.update(hero_params)    hero_params is the style I used in my #update in  myRails project in mod3
+        hero.update(winrate: params[:hero][:winrate]);
         render json: "ok"
     end
 

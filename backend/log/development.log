@@ -41844,3 +41844,980 @@ Processing by HerosController#update as JSON
 Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 1416)
 
 
+Started GET "/heros" for ::1 at 2021-02-22 12:54:59 -0500
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HerosController#index as */*
+  [1m[36mHero Load (1.8ms)[0m  [1m[34mSELECT "heros".* FROM "heros"[0m
+  ↳ app/controllers/heros_controller.rb:12:in `index'
+Completed 200 OK in 37ms (Views: 29.3ms | ActiveRecord: 2.6ms | Allocations: 28451)
+
+
+Started PATCH "/heros" for ::1 at 2021-02-22 12:55:02 -0500
+Processing by HerosController#update as JSON
+  Parameters: {"hero"=>{"name"=>"Axe", "winrate"=>0.4989}}
+  [1m[36mHero Load (0.6ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."name" = ? LIMIT ?[0m  [["name", "Axe"], ["LIMIT", 1]]
+  ↳ app/controllers/heros_controller.rb:19:in `update'
+Completed 200 OK in 62ms (Views: 0.1ms | ActiveRecord: 0.6ms | Allocations: 7277)
+
+
+Started PATCH "/heros" for ::1 at 2021-02-22 12:55:02 -0500
+Started PATCH "/heros" for ::1 at 2021-02-22 12:55:02 -0500
+Started PATCH "/heros" for ::1 at 2021-02-22 12:55:02 -0500
+Started PATCH "/heros" for ::1 at 2021-02-22 12:55:02 -0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by HerosController#update as JSON
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by HerosController#update as JSON
+Started PATCH "/heros" for ::1 at 2021-02-22 12:55:02 -0500
+  Parameters: {"hero"=>{"name"=>"Jakiro", "winrate"=>0.4958}}
+  [1m[36mHero Load (0.6ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."name" = ? LIMIT ?[0m  [["name", "Jakiro"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  Parameters: {"hero"=>{"name"=>"Weaver", "winrate"=>0.5094}}
+  ↳ app/controllers/heros_controller.rb:19:in `update'
+Processing by HerosController#update as JSON
+Processing by HerosController#update as JSON
+  [1m[36mHero Load (0.4ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."name" = ? LIMIT ?[0m  [["name", "Weaver"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Completed 200 OK in 16ms (Views: 0.1ms | ActiveRecord: 0.6ms | Allocations: 2849)
+
+
+  Parameters: {"hero"=>{"name"=>"Anti-Mage", "winrate"=>0.4908}}
+Processing by HerosController#update as JSON
+  [1m[36mHero Load (0.4ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."name" = ? LIMIT ?[0m  [["name", "Anti-Mage"], ["LIMIT", 1]]
+  ↳ app/controllers/heros_controller.rb:19:in `update'
+  Parameters: {"hero"=>{"name"=>"Chen", "winrate"=>0.4629}}
+  Parameters: {"hero"=>{"name"=>"Batrider", "winrate"=>0.4618}}
+Completed 200 OK in 20ms (Views: 0.2ms | ActiveRecord: 0.4ms | Allocations: 4948)
+
+
+  ↳ app/controllers/heros_controller.rb:19:in `update'
+Started PATCH "/heros" for ::1 at 2021-02-22 12:55:02 -0500
+  [1m[36mHero Load (0.4ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."name" = ? LIMIT ?[0m  [["name", "Batrider"], ["LIMIT", 1]]
+  ↳ app/controllers/heros_controller.rb:19:in `update'
+Completed 200 OK in 16ms (Views: 0.1ms | ActiveRecord: 0.4ms | Allocations: 3060)
+
+
+Started PATCH "/heros" for ::1 at 2021-02-22 12:55:02 -0500
+Completed 200 OK in 13ms (Views: 0.2ms | ActiveRecord: 0.4ms | Allocations: 2718)
+
+
+  [1m[36mHero Load (0.3ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."name" = ? LIMIT ?[0m  [["name", "Chen"], ["LIMIT", 1]]
+Processing by HerosController#update as JSON
+  Parameters: {"hero"=>{"name"=>"Spectre", "winrate"=>0.4944}}
+  [1m[36mHero Load (0.3ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."name" = ? LIMIT ?[0m  [["name", "Spectre"], ["LIMIT", 1]]
+Started PATCH "/heros" for ::1 at 2021-02-22 12:55:02 -0500
+  ↳ app/controllers/heros_controller.rb:19:in `update'
+Started PATCH "/heros" for ::1 at 2021-02-22 12:55:02 -0500
+  ↳ app/controllers/heros_controller.rb:19:in `update'
+Completed 200 OK in 16ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 2783)
+
+
+Processing by HerosController#update as JSON
+Completed 200 OK in 39ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 7637)
+
+
+Processing by HerosController#update as JSON
+Processing by HerosController#update as JSON
+  Parameters: {"hero"=>{"name"=>"Invoker", "winrate"=>0.5022}}
+  Parameters: {"hero"=>{"name"=>"Ancient Apparition", "winrate"=>0.5309}}
+Started PATCH "/heros" for ::1 at 2021-02-22 12:55:02 -0500
+  Parameters: {"hero"=>{"name"=>"Spirit Breaker", "winrate"=>0.505}}
+  [1m[36mHero Load (0.2ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."name" = ? LIMIT ?[0m  [["name", "Invoker"], ["LIMIT", 1]]
+Started PATCH "/heros" for ::1 at 2021-02-22 12:55:02 -0500
+  [1m[36mHero Load (0.3ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."name" = ? LIMIT ?[0m  [["name", "Spirit Breaker"], ["LIMIT", 1]]
+  [1m[36mHero Load (0.2ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."name" = ? LIMIT ?[0m  [["name", "Ancient Apparition"], ["LIMIT", 1]]
+  ↳ app/controllers/heros_controller.rb:19:in `update'
+Processing by HerosController#update as JSON
+  ↳ app/controllers/heros_controller.rb:19:in `update'
+Processing by HerosController#update as JSON
+  ↳ app/controllers/heros_controller.rb:19:in `update'
+  Parameters: {"hero"=>{"name"=>"Gyrocopter", "winrate"=>0.4747}}
+Completed 200 OK in 19ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 3588)
+
+
+Completed 200 OK in 18ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 4420)
+
+
+  Parameters: {"hero"=>{"name"=>"Ursa", "winrate"=>0.5118}}
+Completed 200 OK in 20ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 5067)
+
+
+  [1m[36mHero Load (0.3ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."name" = ? LIMIT ?[0m  [["name", "Gyrocopter"], ["LIMIT", 1]]
+  [1m[36mHero Load (0.2ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."name" = ? LIMIT ?[0m  [["name", "Ursa"], ["LIMIT", 1]]
+Started PATCH "/heros" for ::1 at 2021-02-22 12:55:02 -0500
+  ↳ app/controllers/heros_controller.rb:19:in `update'
+Started PATCH "/heros" for ::1 at 2021-02-22 12:55:02 -0500
+Started PATCH "/heros" for ::1 at 2021-02-22 12:55:02 -0500
+Completed 200 OK in 16ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 3063)
+
+
+  ↳ app/controllers/heros_controller.rb:19:in `update'
+Processing by HerosController#update as JSON
+  Parameters: {"hero"=>{"name"=>"Doom", "winrate"=>0.458}}
+Processing by HerosController#update as JSON
+Started PATCH "/heros" for ::1 at 2021-02-22 12:55:02 -0500
+  Parameters: {"hero"=>{"name"=>"Silencer", "winrate"=>0.5021}}
+  [1m[36mHero Load (0.5ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."name" = ? LIMIT ?[0m  [["name", "Doom"], ["LIMIT", 1]]
+  [1m[36mHero Load (0.2ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."name" = ? LIMIT ?[0m  [["name", "Silencer"], ["LIMIT", 1]]
+Processing by HerosController#update as JSON
+Completed 200 OK in 25ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 4796)
+
+
+  ↳ app/controllers/heros_controller.rb:19:in `update'
+  ↳ app/controllers/heros_controller.rb:19:in `update'
+  Parameters: {"hero"=>{"name"=>"Alchemist", "winrate"=>0.5349}}
+Completed 200 OK in 11ms (Views: 0.2ms | ActiveRecord: 0.5ms | Allocations: 2637)
+
+
+Completed 200 OK in 13ms (Views: 0.4ms | ActiveRecord: 0.2ms | Allocations: 3217)
+
+
+  [1m[36mHero Load (0.9ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."name" = ? LIMIT ?[0m  [["name", "Alchemist"], ["LIMIT", 1]]
+Started PATCH "/heros" for ::1 at 2021-02-22 12:55:02 -0500
+Processing by HerosController#update as JSON
+Started PATCH "/heros" for ::1 at 2021-02-22 12:55:02 -0500
+  ↳ app/controllers/heros_controller.rb:19:in `update'
+Started PATCH "/heros" for ::1 at 2021-02-22 12:55:02 -0500
+  Parameters: {"hero"=>{"name"=>"Outworld Devourer", "winrate"=>0.5352}}
+Completed 200 OK in 17ms (Views: 0.1ms | ActiveRecord: 0.9ms | Allocations: 2760)
+
+
+Processing by HerosController#update as JSON
+  Parameters: {"hero"=>{"name"=>"Lycan", "winrate"=>0.5228}}
+  [1m[36mHero Load (0.2ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."name" = ? LIMIT ?[0m  [["name", "Outworld Devourer"], ["LIMIT", 1]]
+Processing by HerosController#update as JSON
+Processing by HerosController#update as JSON
+Started PATCH "/heros" for ::1 at 2021-02-22 12:55:02 -0500
+  ↳ app/controllers/heros_controller.rb:19:in `update'
+  Parameters: {"hero"=>{"name"=>"Lone Druid", "winrate"=>0.4964}}
+  [1m[36mHero Load (0.3ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."name" = ? LIMIT ?[0m  [["name", "Lycan"], ["LIMIT", 1]]
+  Parameters: {"hero"=>{"name"=>"Shadow Demon", "winrate"=>0.472}}
+Processing by HerosController#update as JSON
+  Parameters: {"hero"=>{"name"=>"Chaos Knight", "winrate"=>0.5217}}
+  [1m[36mHero Load (0.2ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."name" = ? LIMIT ?[0m  [["name", "Lone Druid"], ["LIMIT", 1]]
+  ↳ app/controllers/heros_controller.rb:19:in `update'
+  [1m[36mHero Load (0.4ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."name" = ? LIMIT ?[0m  [["name", "Shadow Demon"], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.2ms | Allocations: 2153)
+
+
+  ↳ app/controllers/heros_controller.rb:19:in `update'
+Completed 200 OK in 35ms (Views: 0.4ms | ActiveRecord: 0.3ms | Allocations: 3967)
+
+
+  [1m[36mHero Load (0.2ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."name" = ? LIMIT ?[0m  [["name", "Chaos Knight"], ["LIMIT", 1]]
+  ↳ app/controllers/heros_controller.rb:19:in `update'
+  
+NoMethodError (undefined method `update' for nil:NilClass):
+  
+app/controllers/heros_controller.rb:21:in `update'
+Completed 200 OK in 32ms (Views: 0.1ms | ActiveRecord: 0.4ms | Allocations: 4610)
+
+
+  ↳ app/controllers/heros_controller.rb:19:in `update'
+Completed 200 OK in 70ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 30009)
+
+
+Started PATCH "/heros" for ::1 at 2021-02-22 12:55:03 -0500
+Processing by HerosController#update as JSON
+Completed 200 OK in 30ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 4202)
+
+
+  Parameters: {"hero"=>{"name"=>"Meepo", "winrate"=>0.4768}}
+Started PATCH "/heros" for ::1 at 2021-02-22 12:55:03 -0500
+Started PATCH "/heros" for ::1 at 2021-02-22 12:55:03 -0500
+Started PATCH "/heros" for ::1 at 2021-02-22 12:55:03 -0500
+  [1m[36mHero Load (0.3ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."name" = ? LIMIT ?[0m  [["name", "Meepo"], ["LIMIT", 1]]
+Processing by HerosController#update as JSON
+Started PATCH "/heros" for ::1 at 2021-02-22 12:55:03 -0500
+Processing by HerosController#update as JSON
+  ↳ app/controllers/heros_controller.rb:19:in `update'
+  Parameters: {"hero"=>{"name"=>"Treant Protector", "winrate"=>0.5032}}
+Processing by HerosController#update as JSON
+  Parameters: {"hero"=>{"name"=>"Ogre Magi", "winrate"=>0.5211}}
+  Parameters: {"hero"=>{"name"=>"Undying", "winrate"=>0.4904}}
+Processing by HerosController#update as JSON
+  Parameters: {"hero"=>{"name"=>"Dark Seer", "winrate"=>0.5213}}
+  [1m[36mHero Load (0.3ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."name" = ? LIMIT ?[0m  [["name", "Treant Protector"], ["LIMIT", 1]]
+  [1m[36mHero Load (0.2ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."name" = ? LIMIT ?[0m  [["name", "Ogre Magi"], ["LIMIT", 1]]
+  [1m[36mHero Load (0.2ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."name" = ? LIMIT ?[0m  [["name", "Undying"], ["LIMIT", 1]]
+Completed 200 OK in 13ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 2889)
+
+
+  [1m[36mHero Load (0.2ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."name" = ? LIMIT ?[0m  [["name", "Dark Seer"], ["LIMIT", 1]]
+  ↳ app/controllers/heros_controller.rb:19:in `update'
+  ↳ app/controllers/heros_controller.rb:19:in `update'
+Completed 200 OK in 16ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 3530)
+
+
+  ↳ app/controllers/heros_controller.rb:19:in `update'
+Started PATCH "/heros" for ::1 at 2021-02-22 12:55:03 -0500
+  ↳ app/controllers/heros_controller.rb:19:in `update'
+Started PATCH "/heros" for ::1 at 2021-02-22 12:55:03 -0500
+Completed 200 OK in 19ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 4898)
+
+
+Completed 200 OK in 17ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 4196)
+
+
+Processing by HerosController#update as JSON
+Completed 200 OK in 27ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 6208)
+
+
+  Parameters: {"hero"=>{"name"=>"Disruptor", "winrate"=>0.5004}}
+Processing by HerosController#update as JSON
+Started PATCH "/heros" for ::1 at 2021-02-22 12:55:03 -0500
+Started PATCH "/heros" for ::1 at 2021-02-22 12:55:03 -0500
+Started PATCH "/heros" for ::1 at 2021-02-22 12:55:03 -0500
+  [1m[36mHero Load (0.5ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."name" = ? LIMIT ?[0m  [["name", "Disruptor"], ["LIMIT", 1]]
+  Parameters: {"hero"=>{"name"=>"Rubick", "winrate"=>0.4665}}
+  ↳ app/controllers/heros_controller.rb:19:in `update'
+  [1m[36mHero Load (0.2ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."name" = ? LIMIT ?[0m  [["name", "Rubick"], ["LIMIT", 1]]
+Processing by HerosController#update as JSON
+Processing by HerosController#update as JSON
+Processing by HerosController#update as JSON
+Completed 200 OK in 13ms (Views: 0.4ms | ActiveRecord: 0.5ms | Allocations: 2352)
+
+
+  Parameters: {"hero"=>{"name"=>"Nyx Assassin", "winrate"=>0.5325}}
+  ↳ app/controllers/heros_controller.rb:19:in `update'
+Completed 200 OK in 15ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 3889)
+
+
+  Parameters: {"hero"=>{"name"=>"Io", "winrate"=>0.4708}}
+  [1m[36mHero Load (0.3ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."name" = ? LIMIT ?[0m  [["name", "Io"], ["LIMIT", 1]]
+  [1m[36mHero Load (0.4ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."name" = ? LIMIT ?[0m  [["name", "Nyx Assassin"], ["LIMIT", 1]]
+  ↳ app/controllers/heros_controller.rb:19:in `update'
+Started PATCH "/heros" for ::1 at 2021-02-22 12:55:03 -0500
+  Parameters: {"hero"=>{"name"=>"Brewmaster", "winrate"=>0.4928}}
+Started PATCH "/heros" for ::1 at 2021-02-22 12:55:03 -0500
+Processing by HerosController#update as JSON
+Completed 200 OK in 9ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 2095)
+
+
+  [1m[36mHero Load (0.4ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."name" = ? LIMIT ?[0m  [["name", "Brewmaster"], ["LIMIT", 1]]
+  ↳ app/controllers/heros_controller.rb:19:in `update'
+  ↳ app/controllers/heros_controller.rb:19:in `update'
+Processing by HerosController#update as JSON
+Completed 200 OK in 9ms (Views: 0.1ms | ActiveRecord: 0.4ms | Allocations: 1964)
+
+
+  Parameters: {"hero"=>{"name"=>"Keeper of the Light", "winrate"=>0.4404}}
+Completed 200 OK in 33ms (Views: 0.1ms | ActiveRecord: 0.4ms | Allocations: 6863)
+
+
+  Parameters: {"hero"=>{"name"=>"Visage", "winrate"=>0.5107}}
+  [1m[36mHero Load (0.7ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."name" = ? LIMIT ?[0m  [["name", "Keeper of the Light"], ["LIMIT", 1]]
+  ↳ app/controllers/heros_controller.rb:19:in `update'
+  [1m[36mHero Load (0.3ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."name" = ? LIMIT ?[0m  [["name", "Visage"], ["LIMIT", 1]]
+Started PATCH "/heros" for ::1 at 2021-02-22 12:55:03 -0500
+Completed 200 OK in 13ms (Views: 0.1ms | ActiveRecord: 0.7ms | Allocations: 2029)
+
+
+  ↳ app/controllers/heros_controller.rb:19:in `update'
+Started PATCH "/heros" for ::1 at 2021-02-22 12:55:03 -0500
+Started PATCH "/heros" for ::1 at 2021-02-22 12:55:03 -0500
+Completed 200 OK in 14ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 3410)
+
+
+Processing by HerosController#update as JSON
+Started PATCH "/heros" for ::1 at 2021-02-22 12:55:03 -0500
+  Parameters: {"hero"=>{"name"=>"Slark", "winrate"=>0.4784}}
+Processing by HerosController#update as JSON
+Processing by HerosController#update as JSON
+Started PATCH "/heros" for ::1 at 2021-02-22 12:55:03 -0500
+  Parameters: {"hero"=>{"name"=>"Troll Warlord", "winrate"=>0.5155}}
+  [1m[36mHero Load (0.3ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."name" = ? LIMIT ?[0m  [["name", "Troll Warlord"], ["LIMIT", 1]]
+Processing by HerosController#update as JSON
+  Parameters: {"hero"=>{"name"=>"Medusa", "winrate"=>0.4688}}
+  Parameters: {"hero"=>{"name"=>"Timbersaw", "winrate"=>0.4847}}
+  ↳ app/controllers/heros_controller.rb:19:in `update'
+Processing by HerosController#update as JSON
+  Parameters: {"hero"=>{"name"=>"Centaur Warrunner", "winrate"=>0.5008}}
+  [1m[36mHero Load (0.2ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."name" = ? LIMIT ?[0m  [["name", "Medusa"], ["LIMIT", 1]]
+  [1m[36mHero Load (0.2ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."name" = ? LIMIT ?[0m  [["name", "Slark"], ["LIMIT", 1]]
+  ↳ app/controllers/heros_controller.rb:19:in `update'
+  [1m[36mHero Load (0.1ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."name" = ? LIMIT ?[0m  [["name", "Timbersaw"], ["LIMIT", 1]]
+  ↳ app/controllers/heros_controller.rb:19:in `update'
+Completed 200 OK in 19ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 4664)
+
+
+  [1m[36mHero Load (0.3ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."name" = ? LIMIT ?[0m  [["name", "Centaur Warrunner"], ["LIMIT", 1]]
+  ↳ app/controllers/heros_controller.rb:19:in `update'
+Completed 200 OK in 20ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 4579)
+
+
+Completed 200 OK in 8ms (Views: 0.3ms | ActiveRecord: 0.3ms | Allocations: 2101)
+
+
+  ↳ app/controllers/heros_controller.rb:19:in `update'
+Completed 200 OK in 36ms (Views: 0.2ms | ActiveRecord: 0.1ms | Allocations: 7163)
+
+
+Started PATCH "/heros" for ::1 at 2021-02-22 12:55:03 -0500
+Completed 200 OK in 20ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 4436)
+
+
+Started PATCH "/heros" for ::1 at 2021-02-22 12:55:03 -0500
+Started PATCH "/heros" for ::1 at 2021-02-22 12:55:03 -0500
+Started PATCH "/heros" for ::1 at 2021-02-22 12:55:03 -0500
+Started PATCH "/heros" for ::1 at 2021-02-22 12:55:03 -0500
+Processing by HerosController#update as JSON
+  Parameters: {"hero"=>{"name"=>"Magnus", "winrate"=>0.4551}}
+Processing by HerosController#update as JSON
+Processing by HerosController#update as JSON
+  Parameters: {"hero"=>{"name"=>"Tusk", "winrate"=>0.4945}}
+  [1m[36mHero Load (0.2ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."name" = ? LIMIT ?[0m  [["name", "Magnus"], ["LIMIT", 1]]
+  ↳ app/controllers/heros_controller.rb:19:in `update'
+Processing by HerosController#update as JSON
+  Parameters: {"hero"=>{"name"=>"Abaddon", "winrate"=>0.5233}}
+Processing by HerosController#update as JSON
+  [1m[36mHero Load (0.2ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."name" = ? LIMIT ?[0m  [["name", "Tusk"], ["LIMIT", 1]]
+Completed 200 OK in 8ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 2826)
+
+
+  Parameters: {"hero"=>{"name"=>"Bristleback", "winrate"=>0.4748}}
+  [1m[36mHero Load (0.3ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."name" = ? LIMIT ?[0m  [["name", "Abaddon"], ["LIMIT", 1]]
+  ↳ app/controllers/heros_controller.rb:19:in `update'
+  ↳ app/controllers/heros_controller.rb:19:in `update'
+  [1m[36mHero Load (0.2ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."name" = ? LIMIT ?[0m  [["name", "Bristleback"], ["LIMIT", 1]]
+  Parameters: {"hero"=>{"name"=>"Skywrath Mage", "winrate"=>0.4974}}
+Completed 200 OK in 8ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 2072)
+
+
+Completed 200 OK in 16ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 4338)
+
+
+  ↳ app/controllers/heros_controller.rb:19:in `update'
+Started PATCH "/heros" for ::1 at 2021-02-22 12:55:03 -0500
+Completed 200 OK in 17ms (Views: 0.3ms | ActiveRecord: 0.2ms | Allocations: 4275)
+
+
+  [1m[36mHero Load (0.4ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."name" = ? LIMIT ?[0m  [["name", "Skywrath Mage"], ["LIMIT", 1]]
+Started PATCH "/heros" for ::1 at 2021-02-22 12:55:03 -0500
+Started PATCH "/heros" for ::1 at 2021-02-22 12:55:03 -0500
+  ↳ app/controllers/heros_controller.rb:19:in `update'
+Completed 200 OK in 19ms (Views: 0.1ms | ActiveRecord: 0.4ms | Allocations: 3313)
+
+
+Processing by HerosController#update as JSON
+Processing by HerosController#update as JSON
+Processing by HerosController#update as JSON
+  Parameters: {"hero"=>{"name"=>"Ember Spirit", "winrate"=>0.4691}}
+  [1m[36mHero Load (0.2ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."name" = ? LIMIT ?[0m  [["name", "Ember Spirit"], ["LIMIT", 1]]
+Started PATCH "/heros" for ::1 at 2021-02-22 12:55:03 -0500
+  Parameters: {"hero"=>{"name"=>"Techies", "winrate"=>0.4906}}
+Started PATCH "/heros" for ::1 at 2021-02-22 12:55:03 -0500
+  ↳ app/controllers/heros_controller.rb:19:in `update'
+  [1m[36mHero Load (0.1ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."name" = ? LIMIT ?[0m  [["name", "Techies"], ["LIMIT", 1]]
+  Parameters: {"hero"=>{"name"=>"Legion Commander", "winrate"=>0.4882}}
+Processing by HerosController#update as JSON
+  [1m[36mHero Load (0.2ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."name" = ? LIMIT ?[0m  [["name", "Legion Commander"], ["LIMIT", 1]]
+  Parameters: {"hero"=>{"name"=>"Underlord", "winrate"=>0.5472}}
+Processing by HerosController#update as JSON
+  Parameters: {"hero"=>{"name"=>"Earth Spirit", "winrate"=>0.4957}}
+  [1m[36mHero Load (0.2ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."name" = ? LIMIT ?[0m  [["name", "Underlord"], ["LIMIT", 1]]
+  ↳ app/controllers/heros_controller.rb:19:in `update'
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 1540)
+
+
+  ↳ app/controllers/heros_controller.rb:19:in `update'
+  [1m[36mHero Load (0.2ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."name" = ? LIMIT ?[0m  [["name", "Earth Spirit"], ["LIMIT", 1]]
+  ↳ app/controllers/heros_controller.rb:19:in `update'
+Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 2530)
+
+
+Completed 200 OK in 17ms (Views: 0.4ms | ActiveRecord: 0.1ms | Allocations: 5359)
+
+
+  ↳ app/controllers/heros_controller.rb:19:in `update'
+Completed 200 OK in 16ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 3823)
+
+
+Started PATCH "/heros" for ::1 at 2021-02-22 12:55:03 -0500
+Completed 200 OK in 25ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 5232)
+
+
+Started PATCH "/heros" for ::1 at 2021-02-22 12:55:03 -0500
+Started PATCH "/heros" for ::1 at 2021-02-22 12:55:03 -0500
+Processing by HerosController#update as JSON
+  Parameters: {"hero"=>{"name"=>"Oracle", "winrate"=>0.4983}}
+Started PATCH "/heros" for ::1 at 2021-02-22 12:55:03 -0500
+  [1m[36mHero Load (0.4ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."name" = ? LIMIT ?[0m  [["name", "Oracle"], ["LIMIT", 1]]
+  ↳ app/controllers/heros_controller.rb:19:in `update'
+Processing by HerosController#update as JSON
+Started PATCH "/heros" for ::1 at 2021-02-22 12:55:03 -0500
+Processing by HerosController#update as JSON
+  Parameters: {"hero"=>{"name"=>"Phoenix", "winrate"=>0.4991}}
+Completed 200 OK in 13ms (Views: 0.1ms | ActiveRecord: 0.4ms | Allocations: 3005)
+
+
+Processing by HerosController#update as JSON
+  Parameters: {"hero"=>{"name"=>"Terrorblade", "winrate"=>0.4695}}
+  [1m[36mHero Load (0.2ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."name" = ? LIMIT ?[0m  [["name", "Phoenix"], ["LIMIT", 1]]
+  Parameters: {"hero"=>{"name"=>"Winter Wyvern", "winrate"=>0.5053}}
+  [1m[36mHero Load (0.3ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."name" = ? LIMIT ?[0m  [["name", "Terrorblade"], ["LIMIT", 1]]
+Started PATCH "/heros" for ::1 at 2021-02-22 12:55:03 -0500
+  ↳ app/controllers/heros_controller.rb:19:in `update'
+  [1m[36mHero Load (0.2ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."name" = ? LIMIT ?[0m  [["name", "Winter Wyvern"], ["LIMIT", 1]]
+Processing by HerosController#update as JSON
+  Parameters: {"hero"=>{"name"=>"Arc Warden", "winrate"=>0.5277}}
+Completed 200 OK in 9ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 2340)
+
+
+  ↳ app/controllers/heros_controller.rb:19:in `update'
+  ↳ app/controllers/heros_controller.rb:19:in `update'
+  [1m[36mHero Load (0.4ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."name" = ? LIMIT ?[0m  [["name", "Arc Warden"], ["LIMIT", 1]]
+Completed 200 OK in 23ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 5838)
+
+
+Completed 200 OK in 14ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 3634)
+
+
+Started PATCH "/heros" for ::1 at 2021-02-22 12:55:03 -0500
+  ↳ app/controllers/heros_controller.rb:19:in `update'
+Completed 200 OK in 17ms (Views: 0.2ms | ActiveRecord: 0.4ms | Allocations: 4272)
+
+
+Processing by HerosController#update as JSON
+Started PATCH "/heros" for ::1 at 2021-02-22 12:55:03 -0500
+Started PATCH "/heros" for ::1 at 2021-02-22 12:55:03 -0500
+  Parameters: {"hero"=>{"name"=>"Dark Willow", "winrate"=>0.5143}}
+Processing by HerosController#update as JSON
+  Parameters: {"hero"=>{"name"=>"Monkey King", "winrate"=>0.5109}}
+Processing by HerosController#update as JSON
+Started PATCH "/heros" for ::1 at 2021-02-22 12:55:03 -0500
+  [1m[36mHero Load (0.3ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."name" = ? LIMIT ?[0m  [["name", "Dark Willow"], ["LIMIT", 1]]
+  [1m[36mHero Load (0.2ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."name" = ? LIMIT ?[0m  [["name", "Monkey King"], ["LIMIT", 1]]
+  ↳ app/controllers/heros_controller.rb:19:in `update'
+Processing by HerosController#update as JSON
+  Parameters: {"hero"=>{"name"=>"Naga Siren", "winrate"=>0.5157}}
+  ↳ app/controllers/heros_controller.rb:19:in `update'
+Completed 200 OK in 21ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 2674)
+
+
+  Parameters: {"hero"=>{"name"=>"Pangolier", "winrate"=>0.4882}}
+  [1m[36mHero Load (0.2ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."name" = ? LIMIT ?[0m  [["name", "Naga Siren"], ["LIMIT", 1]]
+Started PATCH "/heros" for ::1 at 2021-02-22 12:55:03 -0500
+Processing by HerosController#update as JSON
+  [1m[36mHero Load (0.4ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."name" = ? LIMIT ?[0m  [["name", "Pangolier"], ["LIMIT", 1]]
+Completed 200 OK in 24ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 3455)
+
+
+Processing by HerosController#update as JSON
+  Parameters: {"hero"=>{"name"=>"Grimstroke", "winrate"=>0.4799}}
+  ↳ app/controllers/heros_controller.rb:19:in `update'
+  ↳ app/controllers/heros_controller.rb:19:in `update'
+  Parameters: {"hero"=>{"name"=>"Hoodwink", "winrate"=>0.4996}}
+Started PATCH "/heros" for ::1 at 2021-02-22 12:55:03 -0500
+Completed 200 OK in 26ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 4287)
+
+
+  [1m[36mHero Load (0.3ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."name" = ? LIMIT ?[0m  [["name", "Grimstroke"], ["LIMIT", 1]]
+Completed 200 OK in 24ms (Views: 0.1ms | ActiveRecord: 0.4ms | Allocations: 3615)
+
+
+  [1m[36mHero Load (0.2ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."name" = ? LIMIT ?[0m  [["name", "Hoodwink"], ["LIMIT", 1]]
+  ↳ app/controllers/heros_controller.rb:19:in `update'
+Completed 200 OK in 25ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 4749)
+
+
+  ↳ app/controllers/heros_controller.rb:19:in `update'
+Processing by HerosController#update as JSON
+  Parameters: {"hero"=>{"name"=>"Void Spirit", "winrate"=>0.503}}
+Started PATCH "/heros" for ::1 at 2021-02-22 12:55:03 -0500
+Completed 200 OK in 20ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 4173)
+
+
+  [1m[36mHero Load (0.3ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."name" = ? LIMIT ?[0m  [["name", "Void Spirit"], ["LIMIT", 1]]
+  ↳ app/controllers/heros_controller.rb:19:in `update'
+Started PATCH "/heros" for ::1 at 2021-02-22 12:55:03 -0500
+Started PATCH "/heros" for ::1 at 2021-02-22 12:55:03 -0500
+Completed 200 OK in 9ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 2052)
+
+
+Processing by HerosController#update as JSON
+Processing by HerosController#update as JSON
+  Parameters: {"hero"=>{"name"=>"Snapfire", "winrate"=>0.4646}}
+  Parameters: {"hero"=>{"name"=>"Bane", "winrate"=>0.509}}
+  [1m[36mHero Load (0.2ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."name" = ? LIMIT ?[0m  [["name", "Bane"], ["LIMIT", 1]]
+  [1m[36mHero Load (0.5ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."name" = ? LIMIT ?[0m  [["name", "Snapfire"], ["LIMIT", 1]]
+Processing by HerosController#update as JSON
+  ↳ app/controllers/heros_controller.rb:19:in `update'
+  ↳ app/controllers/heros_controller.rb:19:in `update'
+  Parameters: {"hero"=>{"name"=>"Mars", "winrate"=>0.4822}}
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 1786)
+
+
+Completed 200 OK in 10ms (Views: 0.3ms | ActiveRecord: 0.5ms | Allocations: 3042)
+
+
+  [1m[36mHero Load (0.2ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."name" = ? LIMIT ?[0m  [["name", "Mars"], ["LIMIT", 1]]
+  ↳ app/controllers/heros_controller.rb:19:in `update'
+Started PATCH "/heros" for ::1 at 2021-02-22 12:55:03 -0500
+Completed 200 OK in 13ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 2027)
+
+
+Processing by HerosController#update as JSON
+  Parameters: {"hero"=>{"name"=>"Bloodseeker", "winrate"=>0.5071}}
+  [1m[36mHero Load (0.4ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."name" = ? LIMIT ?[0m  [["name", "Bloodseeker"], ["LIMIT", 1]]
+  ↳ app/controllers/heros_controller.rb:19:in `update'
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.4ms | Allocations: 1354)
+
+
+Started PATCH "/heros" for ::1 at 2021-02-22 12:55:03 -0500
+Processing by HerosController#update as JSON
+  Parameters: {"hero"=>{"name"=>"Crystal Maiden", "winrate"=>0.4995}}
+  [1m[36mHero Load (0.2ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."name" = ? LIMIT ?[0m  [["name", "Crystal Maiden"], ["LIMIT", 1]]
+  ↳ app/controllers/heros_controller.rb:19:in `update'
+Completed 200 OK in 4ms (Views: 0.4ms | ActiveRecord: 0.2ms | Allocations: 1354)
+
+
+Started PATCH "/heros" for ::1 at 2021-02-22 12:55:03 -0500
+Processing by HerosController#update as JSON
+  Parameters: {"hero"=>{"name"=>"Juggernaut", "winrate"=>0.539}}
+  [1m[36mHero Load (0.3ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."name" = ? LIMIT ?[0m  [["name", "Juggernaut"], ["LIMIT", 1]]
+  ↳ app/controllers/heros_controller.rb:19:in `update'
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 1354)
+
+
+Started PATCH "/heros" for ::1 at 2021-02-22 12:55:03 -0500
+Started PATCH "/heros" for ::1 at 2021-02-22 12:55:03 -0500
+Processing by HerosController#update as JSON
+  Parameters: {"hero"=>{"name"=>"Elder Titan", "winrate"=>0.5079}}
+  [1m[36mHero Load (0.3ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."name" = ? LIMIT ?[0m  [["name", "Elder Titan"], ["LIMIT", 1]]
+Processing by HerosController#update as JSON
+  Parameters: {"hero"=>{"name"=>"Earthshaker", "winrate"=>0.5063}}
+  ↳ app/controllers/heros_controller.rb:19:in `update'
+  [1m[36mHero Load (0.2ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."name" = ? LIMIT ?[0m  [["name", "Earthshaker"], ["LIMIT", 1]]
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 1736)
+
+
+  ↳ app/controllers/heros_controller.rb:19:in `update'
+Completed 200 OK in 9ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 2342)
+
+
+Started PATCH "/heros" for ::1 at 2021-02-22 12:55:03 -0500
+Processing by HerosController#update as JSON
+  Parameters: {"hero"=>{"name"=>"Mirana", "winrate"=>0.5151}}
+  [1m[36mHero Load (0.2ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."name" = ? LIMIT ?[0m  [["name", "Mirana"], ["LIMIT", 1]]
+  ↳ app/controllers/heros_controller.rb:19:in `update'
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 1354)
+
+
+Started PATCH "/heros" for ::1 at 2021-02-22 12:55:03 -0500
+Processing by HerosController#update as JSON
+  Parameters: {"hero"=>{"name"=>"Morphling", "winrate"=>0.471}}
+  [1m[36mHero Load (0.3ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."name" = ? LIMIT ?[0m  [["name", "Morphling"], ["LIMIT", 1]]
+  ↳ app/controllers/heros_controller.rb:19:in `update'
+Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 1354)
+
+
+Started PATCH "/heros" for ::1 at 2021-02-22 12:55:03 -0500
+Processing by HerosController#update as JSON
+  Parameters: {"hero"=>{"name"=>"Shadow Fiend", "winrate"=>0.4825}}
+  [1m[36mHero Load (0.3ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."name" = ? LIMIT ?[0m  [["name", "Shadow Fiend"], ["LIMIT", 1]]
+  ↳ app/controllers/heros_controller.rb:19:in `update'
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 1354)
+
+
+Started PATCH "/heros" for ::1 at 2021-02-22 12:55:03 -0500
+Processing by HerosController#update as JSON
+  Parameters: {"hero"=>{"name"=>"Phantom Lancer", "winrate"=>0.4981}}
+  [1m[36mHero Load (0.4ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."name" = ? LIMIT ?[0m  [["name", "Phantom Lancer"], ["LIMIT", 1]]
+  ↳ app/controllers/heros_controller.rb:19:in `update'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.4ms | Allocations: 1354)
+
+
+Started PATCH "/heros" for ::1 at 2021-02-22 12:55:03 -0500
+Processing by HerosController#update as JSON
+  Parameters: {"hero"=>{"name"=>"Puck", "winrate"=>0.5259}}
+  [1m[36mHero Load (0.3ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."name" = ? LIMIT ?[0m  [["name", "Puck"], ["LIMIT", 1]]
+  ↳ app/controllers/heros_controller.rb:19:in `update'
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 1354)
+
+
+Started PATCH "/heros" for ::1 at 2021-02-22 12:55:03 -0500
+Processing by HerosController#update as JSON
+  Parameters: {"hero"=>{"name"=>"Pudge", "winrate"=>0.4943}}
+  [1m[36mHero Load (0.3ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."name" = ? LIMIT ?[0m  [["name", "Pudge"], ["LIMIT", 1]]
+  ↳ app/controllers/heros_controller.rb:19:in `update'
+Completed 200 OK in 5ms (Views: 0.4ms | ActiveRecord: 0.3ms | Allocations: 1354)
+
+
+Started PATCH "/heros" for ::1 at 2021-02-22 12:55:03 -0500
+Processing by HerosController#update as JSON
+  Parameters: {"hero"=>{"name"=>"Razor", "winrate"=>0.5334}}
+  [1m[36mHero Load (0.2ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."name" = ? LIMIT ?[0m  [["name", "Razor"], ["LIMIT", 1]]
+  ↳ app/controllers/heros_controller.rb:19:in `update'
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 1354)
+
+
+Started PATCH "/heros" for ::1 at 2021-02-22 12:55:03 -0500
+Processing by HerosController#update as JSON
+  Parameters: {"hero"=>{"name"=>"Sand King", "winrate"=>0.5273}}
+  [1m[36mHero Load (0.2ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."name" = ? LIMIT ?[0m  [["name", "Sand King"], ["LIMIT", 1]]
+  ↳ app/controllers/heros_controller.rb:19:in `update'
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 1354)
+
+
+Started PATCH "/heros" for ::1 at 2021-02-22 12:55:03 -0500
+Processing by HerosController#update as JSON
+  Parameters: {"hero"=>{"name"=>"Storm Spirit", "winrate"=>0.503}}
+  [1m[36mHero Load (0.3ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."name" = ? LIMIT ?[0m  [["name", "Storm Spirit"], ["LIMIT", 1]]
+  ↳ app/controllers/heros_controller.rb:19:in `update'
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 1354)
+
+
+Started PATCH "/heros" for ::1 at 2021-02-22 12:55:03 -0500
+Processing by HerosController#update as JSON
+  Parameters: {"hero"=>{"name"=>"Tiny", "winrate"=>0.4479}}
+  [1m[36mHero Load (0.7ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."name" = ? LIMIT ?[0m  [["name", "Tiny"], ["LIMIT", 1]]
+  ↳ app/controllers/heros_controller.rb:19:in `update'
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 0.7ms | Allocations: 1354)
+
+
+Started PATCH "/heros" for ::1 at 2021-02-22 12:55:03 -0500
+Processing by HerosController#update as JSON
+  Parameters: {"hero"=>{"name"=>"Sven", "winrate"=>0.4337}}
+  [1m[36mHero Load (0.2ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."name" = ? LIMIT ?[0m  [["name", "Sven"], ["LIMIT", 1]]
+  ↳ app/controllers/heros_controller.rb:19:in `update'
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 1354)
+
+
+Started PATCH "/heros" for ::1 at 2021-02-22 12:55:03 -0500
+Processing by HerosController#update as JSON
+  Parameters: {"hero"=>{"name"=>"Vengeful Spirit", "winrate"=>0.4749}}
+  [1m[36mHero Load (0.6ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."name" = ? LIMIT ?[0m  [["name", "Vengeful Spirit"], ["LIMIT", 1]]
+  ↳ app/controllers/heros_controller.rb:19:in `update'
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.6ms | Allocations: 1360)
+
+
+Started PATCH "/heros" for ::1 at 2021-02-22 12:55:03 -0500
+Processing by HerosController#update as JSON
+  Parameters: {"hero"=>{"name"=>"Windranger", "winrate"=>0.5134}}
+  [1m[36mHero Load (0.2ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."name" = ? LIMIT ?[0m  [["name", "Windranger"], ["LIMIT", 1]]
+  ↳ app/controllers/heros_controller.rb:19:in `update'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 1354)
+
+
+Started PATCH "/heros" for ::1 at 2021-02-22 12:55:03 -0500
+Processing by HerosController#update as JSON
+  Parameters: {"hero"=>{"name"=>"Zeus", "winrate"=>0.5058}}
+  [1m[36mHero Load (0.4ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."name" = ? LIMIT ?[0m  [["name", "Zeus"], ["LIMIT", 1]]
+  ↳ app/controllers/heros_controller.rb:19:in `update'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.4ms | Allocations: 1354)
+
+
+Started PATCH "/heros" for ::1 at 2021-02-22 12:55:03 -0500
+Processing by HerosController#update as JSON
+  Parameters: {"hero"=>{"name"=>"Kunkka", "winrate"=>0.4546}}
+  [1m[36mHero Load (0.2ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."name" = ? LIMIT ?[0m  [["name", "Kunkka"], ["LIMIT", 1]]
+  ↳ app/controllers/heros_controller.rb:19:in `update'
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 1354)
+
+
+Started PATCH "/heros" for ::1 at 2021-02-22 12:55:03 -0500
+Processing by HerosController#update as JSON
+  Parameters: {"hero"=>{"name"=>"Lina", "winrate"=>0.4675}}
+  [1m[36mHero Load (0.4ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."name" = ? LIMIT ?[0m  [["name", "Lina"], ["LIMIT", 1]]
+  ↳ app/controllers/heros_controller.rb:19:in `update'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.4ms | Allocations: 1354)
+
+
+Started PATCH "/heros" for ::1 at 2021-02-22 12:55:03 -0500
+Processing by HerosController#update as JSON
+  Parameters: {"hero"=>{"name"=>"Lion", "winrate"=>0.5095}}
+  [1m[36mHero Load (0.2ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."name" = ? LIMIT ?[0m  [["name", "Lion"], ["LIMIT", 1]]
+  ↳ app/controllers/heros_controller.rb:19:in `update'
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 1354)
+
+
+Started PATCH "/heros" for ::1 at 2021-02-22 12:55:03 -0500
+Processing by HerosController#update as JSON
+  Parameters: {"hero"=>{"name"=>"Shadow Shaman", "winrate"=>0.5351}}
+  [1m[36mHero Load (0.2ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."name" = ? LIMIT ?[0m  [["name", "Shadow Shaman"], ["LIMIT", 1]]
+  ↳ app/controllers/heros_controller.rb:19:in `update'
+Completed 200 OK in 4ms (Views: 0.6ms | ActiveRecord: 0.2ms | Allocations: 1354)
+
+
+Started PATCH "/heros" for ::1 at 2021-02-22 12:55:03 -0500
+Processing by HerosController#update as JSON
+  Parameters: {"hero"=>{"name"=>"Slardar", "winrate"=>0.4968}}
+  [1m[36mHero Load (0.3ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."name" = ? LIMIT ?[0m  [["name", "Slardar"], ["LIMIT", 1]]
+  ↳ app/controllers/heros_controller.rb:19:in `update'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 1354)
+
+
+Started PATCH "/heros" for ::1 at 2021-02-22 12:55:03 -0500
+Processing by HerosController#update as JSON
+  Parameters: {"hero"=>{"name"=>"Tidehunter", "winrate"=>0.5234}}
+  [1m[36mHero Load (0.2ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."name" = ? LIMIT ?[0m  [["name", "Tidehunter"], ["LIMIT", 1]]
+  ↳ app/controllers/heros_controller.rb:19:in `update'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 1354)
+
+
+Started PATCH "/heros" for ::1 at 2021-02-22 12:55:03 -0500
+Processing by HerosController#update as JSON
+  Parameters: {"hero"=>{"name"=>"Witch Doctor", "winrate"=>0.4763}}
+  [1m[36mHero Load (0.2ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."name" = ? LIMIT ?[0m  [["name", "Witch Doctor"], ["LIMIT", 1]]
+  ↳ app/controllers/heros_controller.rb:19:in `update'
+Completed 200 OK in 10ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 1354)
+
+
+Started PATCH "/heros" for ::1 at 2021-02-22 12:55:03 -0500
+Processing by HerosController#update as JSON
+  Parameters: {"hero"=>{"name"=>"Lich", "winrate"=>0.4976}}
+  [1m[36mHero Load (0.3ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."name" = ? LIMIT ?[0m  [["name", "Lich"], ["LIMIT", 1]]
+  ↳ app/controllers/heros_controller.rb:19:in `update'
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 1354)
+
+
+Started PATCH "/heros" for ::1 at 2021-02-22 12:55:03 -0500
+Processing by HerosController#update as JSON
+  Parameters: {"hero"=>{"name"=>"Riki", "winrate"=>0.5235}}
+  [1m[36mHero Load (0.4ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."name" = ? LIMIT ?[0m  [["name", "Riki"], ["LIMIT", 1]]
+  ↳ app/controllers/heros_controller.rb:19:in `update'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.4ms | Allocations: 1354)
+
+
+Started PATCH "/heros" for ::1 at 2021-02-22 12:55:03 -0500
+Processing by HerosController#update as JSON
+  Parameters: {"hero"=>{"name"=>"Enigma", "winrate"=>0.5336}}
+  [1m[36mHero Load (0.2ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."name" = ? LIMIT ?[0m  [["name", "Enigma"], ["LIMIT", 1]]
+  ↳ app/controllers/heros_controller.rb:19:in `update'
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 1354)
+
+
+Started PATCH "/heros" for ::1 at 2021-02-22 12:55:03 -0500
+Processing by HerosController#update as JSON
+  Parameters: {"hero"=>{"name"=>"Tinker", "winrate"=>0.4707}}
+  [1m[36mHero Load (0.2ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."name" = ? LIMIT ?[0m  [["name", "Tinker"], ["LIMIT", 1]]
+  ↳ app/controllers/heros_controller.rb:19:in `update'
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 1354)
+
+
+Started PATCH "/heros" for ::1 at 2021-02-22 12:55:03 -0500
+Processing by HerosController#update as JSON
+  Parameters: {"hero"=>{"name"=>"Sniper", "winrate"=>0.4859}}
+  [1m[36mHero Load (0.3ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."name" = ? LIMIT ?[0m  [["name", "Sniper"], ["LIMIT", 1]]
+  ↳ app/controllers/heros_controller.rb:19:in `update'
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 1354)
+
+
+Started PATCH "/heros" for ::1 at 2021-02-22 12:55:03 -0500
+Processing by HerosController#update as JSON
+  Parameters: {"hero"=>{"name"=>"Warlock", "winrate"=>0.5144}}
+  [1m[36mHero Load (0.2ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."name" = ? LIMIT ?[0m  [["name", "Warlock"], ["LIMIT", 1]]
+  ↳ app/controllers/heros_controller.rb:19:in `update'
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 1354)
+
+
+Started PATCH "/heros" for ::1 at 2021-02-22 12:55:03 -0500
+Processing by HerosController#update as JSON
+  Parameters: {"hero"=>{"name"=>"Necrophos", "winrate"=>0.4916}}
+  [1m[36mHero Load (0.7ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."name" = ? LIMIT ?[0m  [["name", "Necrophos"], ["LIMIT", 1]]
+  ↳ app/controllers/heros_controller.rb:19:in `update'
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.7ms | Allocations: 1354)
+
+
+Started PATCH "/heros" for ::1 at 2021-02-22 12:55:03 -0500
+Processing by HerosController#update as JSON
+  Parameters: {"hero"=>{"name"=>"Beastmaster", "winrate"=>0.5185}}
+  [1m[36mHero Load (0.2ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."name" = ? LIMIT ?[0m  [["name", "Beastmaster"], ["LIMIT", 1]]
+  ↳ app/controllers/heros_controller.rb:19:in `update'
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 1354)
+
+
+Started PATCH "/heros" for ::1 at 2021-02-22 12:55:03 -0500
+Processing by HerosController#update as JSON
+  Parameters: {"hero"=>{"name"=>"Queen of Pain", "winrate"=>0.4793}}
+  [1m[36mHero Load (0.3ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."name" = ? LIMIT ?[0m  [["name", "Queen of Pain"], ["LIMIT", 1]]
+  ↳ app/controllers/heros_controller.rb:19:in `update'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 1354)
+
+
+Started PATCH "/heros" for ::1 at 2021-02-22 12:55:03 -0500
+Processing by HerosController#update as JSON
+  Parameters: {"hero"=>{"name"=>"Venomancer", "winrate"=>0.5115}}
+  [1m[36mHero Load (0.2ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."name" = ? LIMIT ?[0m  [["name", "Venomancer"], ["LIMIT", 1]]
+  ↳ app/controllers/heros_controller.rb:19:in `update'
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 1354)
+
+
+Started PATCH "/heros" for ::1 at 2021-02-22 12:55:03 -0500
+Processing by HerosController#update as JSON
+  Parameters: {"hero"=>{"name"=>"Faceless Void", "winrate"=>0.4449}}
+  [1m[36mHero Load (0.3ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."name" = ? LIMIT ?[0m  [["name", "Faceless Void"], ["LIMIT", 1]]
+  ↳ app/controllers/heros_controller.rb:19:in `update'
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 1354)
+
+
+Started PATCH "/heros" for ::1 at 2021-02-22 12:55:03 -0500
+Processing by HerosController#update as JSON
+  Parameters: {"hero"=>{"name"=>"Wraith King", "winrate"=>0.5393}}
+  [1m[36mHero Load (0.2ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."name" = ? LIMIT ?[0m  [["name", "Wraith King"], ["LIMIT", 1]]
+  ↳ app/controllers/heros_controller.rb:19:in `update'
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 1354)
+
+
+Started PATCH "/heros" for ::1 at 2021-02-22 12:55:03 -0500
+Processing by HerosController#update as JSON
+  Parameters: {"hero"=>{"name"=>"Death Prophet", "winrate"=>0.5043}}
+  [1m[36mHero Load (0.7ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."name" = ? LIMIT ?[0m  [["name", "Death Prophet"], ["LIMIT", 1]]
+  ↳ app/controllers/heros_controller.rb:19:in `update'
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 0.7ms | Allocations: 1357)
+
+
+Started PATCH "/heros" for ::1 at 2021-02-22 12:55:03 -0500
+Processing by HerosController#update as JSON
+  Parameters: {"hero"=>{"name"=>"Phantom Assassin", "winrate"=>0.4714}}
+  [1m[36mHero Load (0.2ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."name" = ? LIMIT ?[0m  [["name", "Phantom Assassin"], ["LIMIT", 1]]
+  ↳ app/controllers/heros_controller.rb:19:in `update'
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 1354)
+
+
+Started PATCH "/heros" for ::1 at 2021-02-22 12:55:04 -0500
+Processing by HerosController#update as JSON
+  Parameters: {"hero"=>{"name"=>"Pugna", "winrate"=>0.4994}}
+  [1m[36mHero Load (0.3ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."name" = ? LIMIT ?[0m  [["name", "Pugna"], ["LIMIT", 1]]
+  ↳ app/controllers/heros_controller.rb:19:in `update'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 1354)
+
+
+Started PATCH "/heros" for ::1 at 2021-02-22 12:55:04 -0500
+Processing by HerosController#update as JSON
+  Parameters: {"hero"=>{"name"=>"Templar Assassin", "winrate"=>0.4898}}
+  [1m[36mHero Load (0.2ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."name" = ? LIMIT ?[0m  [["name", "Templar Assassin"], ["LIMIT", 1]]
+  ↳ app/controllers/heros_controller.rb:19:in `update'
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 1354)
+
+
+Started PATCH "/heros" for ::1 at 2021-02-22 12:55:04 -0500
+Processing by HerosController#update as JSON
+  Parameters: {"hero"=>{"name"=>"Viper", "winrate"=>0.4854}}
+  [1m[36mHero Load (0.3ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."name" = ? LIMIT ?[0m  [["name", "Viper"], ["LIMIT", 1]]
+  ↳ app/controllers/heros_controller.rb:19:in `update'
+Completed 200 OK in 6ms (Views: 0.3ms | ActiveRecord: 0.3ms | Allocations: 1354)
+
+
+Started PATCH "/heros" for ::1 at 2021-02-22 12:55:04 -0500
+Processing by HerosController#update as JSON
+  Parameters: {"hero"=>{"name"=>"Drow Ranger", "winrate"=>0.4815}}
+  [1m[36mHero Load (0.2ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."name" = ? LIMIT ?[0m  [["name", "Drow Ranger"], ["LIMIT", 1]]
+  ↳ app/controllers/heros_controller.rb:19:in `update'
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 1354)
+
+
+Started PATCH "/heros" for ::1 at 2021-02-22 12:55:04 -0500
+Processing by HerosController#update as JSON
+  Parameters: {"hero"=>{"name"=>"Luna", "winrate"=>0.5106}}
+  [1m[36mHero Load (0.2ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."name" = ? LIMIT ?[0m  [["name", "Luna"], ["LIMIT", 1]]
+  ↳ app/controllers/heros_controller.rb:19:in `update'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 1354)
+
+
+Started PATCH "/heros" for ::1 at 2021-02-22 12:55:04 -0500
+Processing by HerosController#update as JSON
+  Parameters: {"hero"=>{"name"=>"Dragon Knight", "winrate"=>0.501}}
+  [1m[36mHero Load (0.3ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."name" = ? LIMIT ?[0m  [["name", "Dragon Knight"], ["LIMIT", 1]]
+  ↳ app/controllers/heros_controller.rb:19:in `update'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 1354)
+
+
+Started PATCH "/heros" for ::1 at 2021-02-22 12:55:04 -0500
+Processing by HerosController#update as JSON
+  Parameters: {"hero"=>{"name"=>"Dazzle", "winrate"=>0.4822}}
+  [1m[36mHero Load (0.3ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."name" = ? LIMIT ?[0m  [["name", "Dazzle"], ["LIMIT", 1]]
+  ↳ app/controllers/heros_controller.rb:19:in `update'
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 1354)
+
+
+Started PATCH "/heros" for ::1 at 2021-02-22 12:55:04 -0500
+Processing by HerosController#update as JSON
+  Parameters: {"hero"=>{"name"=>"Clockwerk", "winrate"=>0.5113}}
+  [1m[36mHero Load (0.3ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."name" = ? LIMIT ?[0m  [["name", "Clockwerk"], ["LIMIT", 1]]
+  ↳ app/controllers/heros_controller.rb:19:in `update'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 1354)
+
+
+Started PATCH "/heros" for ::1 at 2021-02-22 12:55:04 -0500
+Processing by HerosController#update as JSON
+  Parameters: {"hero"=>{"name"=>"Leshrac", "winrate"=>0.4595}}
+  [1m[36mHero Load (0.2ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."name" = ? LIMIT ?[0m  [["name", "Leshrac"], ["LIMIT", 1]]
+  ↳ app/controllers/heros_controller.rb:19:in `update'
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 1354)
+
+
+Started PATCH "/heros" for ::1 at 2021-02-22 12:55:04 -0500
+Processing by HerosController#update as JSON
+  Parameters: {"hero"=>{"name"=>"Nature's Prophet", "winrate"=>0.4419}}
+  [1m[36mHero Load (0.2ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."name" = ? LIMIT ?[0m  [["name", "Nature's Prophet"], ["LIMIT", 1]]
+  ↳ app/controllers/heros_controller.rb:19:in `update'
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 1354)
+
+
+Started PATCH "/heros" for ::1 at 2021-02-22 12:55:04 -0500
+Processing by HerosController#update as JSON
+  Parameters: {"hero"=>{"name"=>"Clinkz", "winrate"=>0.5444}}
+  [1m[36mHero Load (0.3ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."name" = ? LIMIT ?[0m  [["name", "Clinkz"], ["LIMIT", 1]]
+  ↳ app/controllers/heros_controller.rb:19:in `update'
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 1354)
+
+
+Started PATCH "/heros" for ::1 at 2021-02-22 12:55:04 -0500
+Processing by HerosController#update as JSON
+  Parameters: {"hero"=>{"name"=>"Lifestealer", "winrate"=>0.492}}
+  [1m[36mHero Load (0.4ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."name" = ? LIMIT ?[0m  [["name", "Lifestealer"], ["LIMIT", 1]]
+  ↳ app/controllers/heros_controller.rb:19:in `update'
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 0.4ms | Allocations: 1354)
+
+
+Started PATCH "/heros" for ::1 at 2021-02-22 12:55:04 -0500
+Processing by HerosController#update as JSON
+  Parameters: {"hero"=>{"name"=>"Omniknight", "winrate"=>0.4969}}
+  [1m[36mHero Load (0.2ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."name" = ? LIMIT ?[0m  [["name", "Omniknight"], ["LIMIT", 1]]
+  ↳ app/controllers/heros_controller.rb:19:in `update'
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 1354)
+
+
+Started PATCH "/heros" for ::1 at 2021-02-22 12:55:04 -0500
+Processing by HerosController#update as JSON
+  Parameters: {"hero"=>{"name"=>"Enchantress", "winrate"=>0.4393}}
+  [1m[36mHero Load (0.3ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."name" = ? LIMIT ?[0m  [["name", "Enchantress"], ["LIMIT", 1]]
+  ↳ app/controllers/heros_controller.rb:19:in `update'
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 1354)
+
+
+Started PATCH "/heros" for ::1 at 2021-02-22 12:55:04 -0500
+Processing by HerosController#update as JSON
+  Parameters: {"hero"=>{"name"=>"Huskar", "winrate"=>0.4899}}
+  [1m[36mHero Load (0.3ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."name" = ? LIMIT ?[0m  [["name", "Huskar"], ["LIMIT", 1]]
+  ↳ app/controllers/heros_controller.rb:19:in `update'
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 1354)
+
+
+Started PATCH "/heros" for ::1 at 2021-02-22 12:55:04 -0500
+Processing by HerosController#update as JSON
+  Parameters: {"hero"=>{"name"=>"Night Stalker", "winrate"=>0.5391}}
+  [1m[36mHero Load (0.4ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."name" = ? LIMIT ?[0m  [["name", "Night Stalker"], ["LIMIT", 1]]
+  ↳ app/controllers/heros_controller.rb:19:in `update'
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.4ms | Allocations: 1354)
+
+
+Started PATCH "/heros" for ::1 at 2021-02-22 12:55:04 -0500
+Processing by HerosController#update as JSON
+  Parameters: {"hero"=>{"name"=>"Broodmother", "winrate"=>0.5122}}
+  [1m[36mHero Load (0.2ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."name" = ? LIMIT ?[0m  [["name", "Broodmother"], ["LIMIT", 1]]
+  ↳ app/controllers/heros_controller.rb:19:in `update'
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 1354)
+
+
+Started PATCH "/heros" for ::1 at 2021-02-22 12:55:04 -0500
+Processing by HerosController#update as JSON
+  Parameters: {"hero"=>{"name"=>"Bounty Hunter", "winrate"=>0.535}}
+  [1m[36mHero Load (0.3ms)[0m  [1m[34mSELECT "heros".* FROM "heros" WHERE "heros"."name" = ? LIMIT ?[0m  [["name", "Bounty Hunter"], ["LIMIT", 1]]
+  ↳ app/controllers/heros_controller.rb:19:in `update'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 1354)
+
+
