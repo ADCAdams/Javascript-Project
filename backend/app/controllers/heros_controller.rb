@@ -13,6 +13,20 @@ class HerosController < ApplicationController
         #render json: Heros
 
     end
-    
+
+    def update
+        #binding.pry
+        hero = Hero.find_by(name: params[:hero][:name])
+        hero.update(hero_params)
+        render json: "ok"
+    end
+
+    private
+
+    def hero_params
+        params.require(:hero).permit(:name, :winrate)
+    end
+
+
 end
 

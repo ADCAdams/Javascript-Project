@@ -35,21 +35,23 @@ class ApiService {
             .then(resp => resp.json())
     }
 
-    updateHero(heroObj){
-    return fetch(`${this.baseUrl}/heros`, {
-            method: "PATCH" ,
-            headers: {
-            "Content-Type": "application/json",
-            Accept: "application/json"
-            },
-            
-            body: JSON.stringify({
-                match: {
-                    winrate: heroObj.winrate
-                }
+    updateHeroDB(heroObj){
+        return fetch(`${this.baseUrl}/heros`, {
+                method: "PATCH" ,
+                headers: {
+                "Content-Type": "application/json",
+                Accept: "application/json"
+                },
+                
+                body: JSON.stringify({
+                    hero: {
+                        name: heroObj.name,
+                        winrate: heroObj.winrate
+                    }
 
-                })
-        }).then(resp => resp.json())
-    }
+                    })
+            }).then(resp => resp.json())
+
+    }    
 
 }//ends service class

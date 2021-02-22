@@ -1,10 +1,23 @@
 class Hero {
 
     constructor(hero){
-        this.name = hero.attributes.name
-        this.winrate = hero.attributes.winrate
-        this.role = hero.attributes.role
+        try { 
+            if (hero.base_health > 0){
+            this.name = hero.localized_name;
+            this.winrate = 0;
+            this.role = "";
+        } else {
+            this.name = hero.attributes.name;
+            this.winrate = hero.attributes.winrate
+            this.role = hero.attributes.role
+        } 
+        }
+        catch(err){
+            alert(err.message)
+        }
     }
+
+
     appendRadiantHero(hero) {
         let radiantUL = document.getElementById("radiantListID")
     
@@ -19,12 +32,18 @@ class Hero {
         direUL.append(liHero)
     }
 
-    
+   
      static updateHero(hero){
         const win = "5_win"
         const pick = "5_pick"
         let winrate = (hero[win])/(hero[pick])
-        winrate= winrate.toFixed(4)
+        winrate= parseFloat(winrate.toFixed(4));
+
+
+        let newApiHero = new Hero(hero)
+        newApiHero.winrate = winrate
+
+        apiService.updateHeroDB(newApiHero);
         //console.log(`${hero.localized_name} has a winrate of ${winrate}`)
 }
 

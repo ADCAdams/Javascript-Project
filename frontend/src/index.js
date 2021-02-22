@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
     addMatchButtonListener()
     addSaveMatchButtonListener()
+    addRefreshHerosButtonListener()
 })
 
 function addMatchButtonListener() {
@@ -22,8 +23,15 @@ function addSaveMatchButtonListener() {
     button.addEventListener('click', function(){
         if (currentMatch){
             apiService.postMatch(currentMatch)
-            //Hero.updateHeros();
         }
+    })
+}
+
+function addRefreshHerosButtonListener() {
+    const button = document.getElementById("refreshHerosButton")
+    button.addEventListener('click', function(){
+        Hero.updateHeros()
+
     })
 }
 
