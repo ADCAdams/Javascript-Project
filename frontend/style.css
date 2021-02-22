@@ -1,6 +1,4 @@
 body {
-    margin: 10;
-    padding: 10;
     font-family: "Lucida Console", "Courier New", monospace;
   }
 
@@ -12,12 +10,13 @@ H2{
     flex-direction: column;
     display: flex;
 }
-/* .heroListItem{
-    display: flex;
-} */
+
+
 .heroLiSpan {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding: 2.5%;
 }
 
 .containerButton {
@@ -47,24 +46,27 @@ H2{
 
 }
 
-
-
 .column{
     float: left;
     width: 50%;
-    background-color:lightcoral
+    background-color:rgb(255, 255, 255);
 }
 
 .heroList{
     font-size: 20px;
     list-style-type: none;
-
+    padding:10px;
+    margin: 5px;
 }
 
 .heroListItem{
-    background-color: lightblue
+    background-color: lightblue;
+    margin: 5px;
+    list-style-position:inside;
+    border: 1px solid black;
 }
 
-/* .teamName {
-    f
-} */
+#teamDiv {
+    text-align: center;
+
+}
