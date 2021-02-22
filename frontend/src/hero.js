@@ -20,19 +20,19 @@ class Hero {
     }
 
     
-     updateHero(hero){
-    win = "5_win"
-    pick = "5_pick"
-    winrate = (hero[win])/(hero[pick])
-    winrate= winrate.toFixed(4)
-    //console.log(`${hero.localized_name} has a winrate of ${winrate}`)
+     static updateHero(hero){
+        const win = "5_win"
+        const pick = "5_pick"
+        let winrate = (hero[win])/(hero[pick])
+        winrate= winrate.toFixed(4)
+        //console.log(`${hero.localized_name} has a winrate of ${winrate}`)
 }
 
     static updateHeros(){
-        dotadata().then(heros => {
+        apiService.getNewApiHeros().then(heros => {
             // console.log(heros)
             heros.forEach(hero => {
-            updateHero(hero)
+            Hero.updateHero(hero)
             })
         })
     }

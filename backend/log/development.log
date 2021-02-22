@@ -10051,3 +10051,105 @@ Processing by HerosController#index as */*
 Completed 200 OK in 71ms (Views: 61.3ms | ActiveRecord: 3.6ms | Allocations: 28456)
 
 
+Started GET "/heros" for ::1 at 2021-02-21 21:59:03 -0500
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HerosController#index as */*
+  [1m[36mHero Load (2.9ms)[0m  [1m[34mSELECT "heros".* FROM "heros"[0m
+  ↳ app/controllers/heros_controller.rb:12:in `index'
+Completed 200 OK in 68ms (Views: 54.8ms | ActiveRecord: 3.9ms | Allocations: 28456)
+
+
+Started GET "/heros" for ::1 at 2021-02-21 21:59:32 -0500
+Processing by HerosController#index as */*
+  [1m[36mHero Load (1.1ms)[0m  [1m[34mSELECT "heros".* FROM "heros"[0m
+  ↳ app/controllers/heros_controller.rb:12:in `index'
+Completed 200 OK in 56ms (Views: 53.2ms | ActiveRecord: 1.1ms | Allocations: 21385)
+
+
+Started POST "/matches" for ::1 at 2021-02-21 21:59:36 -0500
+Processing by MatchesController#create as JSON
+  Parameters: {"match"=>{"winner"=>"Dire", "winnerProbability"=>0.01342857142857217}}
+[31mUnpermitted parameter: :winnerProbability[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/matches_controller.rb:3:in `create'
+  [1m[36mMatch Create (1.5ms)[0m  [1m[32mINSERT INTO "matches" ("winner", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["winner", "Dire"], ["created_at", "2021-02-22 02:59:36.391102"], ["updated_at", "2021-02-22 02:59:36.391102"]]
+  ↳ app/controllers/matches_controller.rb:3:in `create'
+  [1m[35m (17.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/matches_controller.rb:3:in `create'
+Completed 200 OK in 39ms (Views: 0.9ms | ActiveRecord: 20.2ms | Allocations: 6239)
+
+
+Started POST "/matches" for ::1 at 2021-02-21 22:00:53 -0500
+Processing by MatchesController#create as JSON
+  Parameters: {"match"=>{"winner"=>"Dire", "winnerProbability"=>0.01342857142857217}}
+[31mUnpermitted parameter: :winnerProbability[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/matches_controller.rb:3:in `create'
+  [1m[36mMatch Create (1.4ms)[0m  [1m[32mINSERT INTO "matches" ("winner", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["winner", "Dire"], ["created_at", "2021-02-22 03:00:53.320239"], ["updated_at", "2021-02-22 03:00:53.320239"]]
+  ↳ app/controllers/matches_controller.rb:3:in `create'
+  [1m[35m (16.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/matches_controller.rb:3:in `create'
+Completed 200 OK in 32ms (Views: 0.4ms | ActiveRecord: 18.0ms | Allocations: 3762)
+
+
+Started GET "/heros" for ::1 at 2021-02-21 22:00:59 -0500
+Processing by HerosController#index as */*
+  [1m[36mHero Load (0.9ms)[0m  [1m[34mSELECT "heros".* FROM "heros"[0m
+  ↳ app/controllers/heros_controller.rb:12:in `index'
+Completed 200 OK in 25ms (Views: 23.9ms | ActiveRecord: 0.9ms | Allocations: 21382)
+
+
+Started POST "/matches" for ::1 at 2021-02-21 22:01:02 -0500
+Processing by MatchesController#create as JSON
+  Parameters: {"match"=>{"winner"=>"Dire", "winnerProbability"=>0.24714285714285686}}
+[31mUnpermitted parameter: :winnerProbability[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/matches_controller.rb:3:in `create'
+  [1m[36mMatch Create (1.6ms)[0m  [1m[32mINSERT INTO "matches" ("winner", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["winner", "Dire"], ["created_at", "2021-02-22 03:01:02.228207"], ["updated_at", "2021-02-22 03:01:02.228207"]]
+  ↳ app/controllers/matches_controller.rb:3:in `create'
+  [1m[35m (8.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/matches_controller.rb:3:in `create'
+Completed 200 OK in 20ms (Views: 1.9ms | ActiveRecord: 10.1ms | Allocations: 2879)
+
+
+Started GET "/heros" for ::1 at 2021-02-21 22:01:36 -0500
+Processing by HerosController#index as */*
+  [1m[36mHero Load (1.0ms)[0m  [1m[34mSELECT "heros".* FROM "heros"[0m
+  ↳ app/controllers/heros_controller.rb:12:in `index'
+Completed 200 OK in 22ms (Views: 20.1ms | ActiveRecord: 1.0ms | Allocations: 21365)
+
+
+Started POST "/matches" for ::1 at 2021-02-21 22:01:40 -0500
+Processing by MatchesController#create as JSON
+  Parameters: {"match"=>{"winner"=>"Radiant", "winnerProbability"=>0.02942857142857072}}
+[31mUnpermitted parameter: :winnerProbability[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/matches_controller.rb:3:in `create'
+  [1m[36mMatch Create (1.2ms)[0m  [1m[32mINSERT INTO "matches" ("winner", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["winner", "Radiant"], ["created_at", "2021-02-22 03:01:40.629505"], ["updated_at", "2021-02-22 03:01:40.629505"]]
+  ↳ app/controllers/matches_controller.rb:3:in `create'
+  [1m[35m (16.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/matches_controller.rb:3:in `create'
+Completed 200 OK in 26ms (Views: 0.5ms | ActiveRecord: 17.5ms | Allocations: 3272)
+
+
+Started GET "/heros" for ::1 at 2021-02-21 22:02:22 -0500
+Processing by HerosController#index as */*
+  [1m[36mHero Load (1.0ms)[0m  [1m[34mSELECT "heros".* FROM "heros"[0m
+  ↳ app/controllers/heros_controller.rb:12:in `index'
+Completed 200 OK in 29ms (Views: 28.1ms | ActiveRecord: 1.0ms | Allocations: 21370)
+
+
+Started POST "/matches" for ::1 at 2021-02-21 22:02:25 -0500
+Processing by MatchesController#create as JSON
+  Parameters: {"match"=>{"winner"=>"Dire", "winnerProbability"=>0.05999999999999973}}
+[31mUnpermitted parameter: :winnerProbability[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/matches_controller.rb:3:in `create'
+  [1m[36mMatch Create (1.6ms)[0m  [1m[32mINSERT INTO "matches" ("winner", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["winner", "Dire"], ["created_at", "2021-02-22 03:02:25.589430"], ["updated_at", "2021-02-22 03:02:25.589430"]]
+  ↳ app/controllers/matches_controller.rb:3:in `create'
+  [1m[35m (18.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/matches_controller.rb:3:in `create'
+Completed 200 OK in 29ms (Views: 0.6ms | ActiveRecord: 20.0ms | Allocations: 2906)
+
+
