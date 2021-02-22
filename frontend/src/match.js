@@ -15,9 +15,7 @@ class Match {
         Match.clearHeroList("radiantListID");
         Match.clearHeroList("direListID");
         Match.clearWinners();
-    
-        
- 
+
         apiService.getHeros().then(herosResp => { 
             let allHeros = []
             let rawHerosForMatch = []
@@ -45,14 +43,9 @@ class Match {
 
              this.calculateMatchWinner();
 
-        }) //ends get promise
-
-
-         
+        }) //ends get promise    
     }
 
-
-    
      calculateTeamWinAvg(teamHeroArray){
         let teamWinAvg = 0
         teamHeroArray.forEach(function (hero){
@@ -97,18 +90,21 @@ class Match {
         winContainer.append(winProbSpan);
     }
 
-
-    
-
      static renderHero(hero){
         let newli = document.createElement('li')
         newli.className="heroListItem"
-        newli.innerHTML = `<span class="heroLiSpan"> <span class="heroNameSpan">
-        ${hero.name}
-        </span>
-        <span class="heroWinrateSpan">
-        ${parseFloat(hero.winrate*100).toFixed(2)+"%"}
-        </span> </span>`
+        newli.innerHTML = 
+        `<span class="heroLiSpan">
+            <span class="heroImage">
+                <img src="http://cdn.dota2.com/apps/dota2/images/heroes/${hero.name.toLowerCase()}_full.png" style="width:80px;height:45px;"></img>
+            </span>
+            <span class="heroNameSpan">
+                ${hero.name}
+            </span>
+            <span class="heroWinrateSpan">
+                ${parseFloat(hero.winrate*100).toFixed(2)+"%"}
+            </span>
+        </span>`
         return newli
     }
     

@@ -1,6 +1,7 @@
 body {
     margin: 10;
     padding: 10;
+    font-family: "Lucida Console", "Courier New", monospace;
   }
 
 H2{
@@ -16,7 +17,7 @@ H2{
 } */
 .heroLiSpan {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .containerButton {
@@ -64,3 +65,6 @@ H2{
     background-color: lightblue
 }
 
+/* .teamName {
+    f
+} */
