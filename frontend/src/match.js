@@ -90,6 +90,7 @@ class Match {
         winContainer.append(winProbSpan);
     }
 
+
      static renderHero(hero){
         let newli = document.createElement('li')
         newli.className="heroListItem"
